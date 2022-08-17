@@ -185,13 +185,11 @@
         display: flex;
         grid-area: footer;
         text-align: center;
-        background-color: #403D39;
+        background: linear-gradient(to right top, rgb(11, 31, 42), rgb(68, 100, 148)) rgb(11, 31, 42);
         flex-direction: column;
         align-items: stretch;
         flex-wrap: wrap;
-        padding-top: 5px;
-
-        
+        margin-top: 0.2rem;
         
     }
     
@@ -260,7 +258,7 @@
     
         .mapaLogo{
             display: flex;
-            background-color: #403D39;
+            background: linear-gradient(179deg, #403d39, #16161561);
             text-align: center;
             flex-wrap: wrap;
             flex-direction: column;
@@ -277,10 +275,11 @@
         .mapaLogo nav h2 {
             text-align: center;
             color: #bbbbbb;
-            letter-spacing: 1px;
-            line-height: 1.5;
+            font-size: 1.4rem;
+           margin-bottom: 1rem;
             font-weight: bold;
             text-transform: uppercase;
+            
            
         }
     
@@ -294,10 +293,9 @@
         }
     
         .menuA{
+
             font-weight: bold;
-       
             display: inline-flex;
-            font-size: 20px;
             text-align: center;
             flex-direction: row;
             flex-wrap: wrap;
@@ -346,34 +344,7 @@
             
             color: #888888;
         }
-    
-        .menu2{
-            
-            font-weight: lighter;
-            font-size: 14px;
-            text-align: center;
-        }
-    
-        .menu2 a{
-
-            text-transform:initial;
-            
-            color: #888888;
-        }
-    
-        .menu3{
-            
-            font-weight: lighter;
-            font-size: 14px;
-            text-align: center;
-        }
-    
-    
-        .menu3 a{
-            color: #888888;
-            
-        }
-
+        
 /* -------------------------------------------------------- del footer copyright */
 
 .copyRight{
@@ -567,15 +538,17 @@ main{
     transform: translate3d(0, 0, 0);
     transition: all 600ms;
     animation-name: autoplay;
-    animation-duration: 6.5s;
-    animation-direction: alternate;
+    animation-duration: 30s;
+    animation-direction:alternate;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    
 }
 
 .imgSlider{
 
     padding-right: 2rem;
+    
     
 }
     
@@ -686,6 +659,25 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 }
 
 
+@keyframes autoplay{
+    0% {transform: translate3d(0,0,0);}
+    20% {transform: translate3d(0,0,0);}
+
+    25% {transform: translate3d(-100%,0,0);}
+    45% {transform: translate3d(-100%,0,0);}
+
+    50% {transform: translate3d(-200%,0,0);}
+    70% {transform: translate3d(-200%,0,0);}
+
+    75% {transform: translate3d(-300%,0,0);}
+    100% {transform: translate3d(-300%,0,0);}
+    
+    
+    
+
+}
+
+
 
 /*------------------------------------------- Fin de Slider*/
   
@@ -693,7 +685,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
   .linkAcceso{
    
    
-    background-color: rgb(64, 61, 57);
+    background:linear-gradient(0deg, #403d39, rgb(58 55 52));
     display: flex;
     color: rgb(136, 136, 136);
     flex-direction: row;
