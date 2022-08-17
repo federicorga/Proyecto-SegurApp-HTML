@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <title>SegurAPP</title>
+  </head>
+
+  <body>
+
+    <header > <!--Cabecera-->
+
+    
+      <!--logo + menu principal de Navegación-->
+
+      <div id="logoUno" class="imgLogoP"><!--Logo principal-->
+        <a href="index.html"><img src="imagen/logochico.png" alt="logoprincipal" height="120"/></a> 
+      </div>
+
+      
+
+      <nav  id="navegacionPrincipal" class="navegacion" > <!--Menu principal de navegacion--> 
+
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="html/quienessomos.html">Quienes somos</a></li>
+          <li><a href="html/servicios.html">Servicios</a></li>
+          <li><a href="html/legislacion.html">Legislación</a></li>
+          <li><a href="html/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="buscar"> <!--buscador-->
+        <input type="text" placeholder="Buscar" required>
+      </div>
+
+      
+    </header> 
+
+
+    <main> <!--Contenido Principal-->
+
+      <seccion class="seccionSlider">
+        <div class="contenedor-slider">
+
+          <input type="radio" id="1" name="imagen-slider" hidden/>
+          <input type="radio" id="2" name="imagen-slider" hidden/>
+          <input type="radio" id="3" name="imagen-slider" hidden/>
+          <input type="radio" id="4" name="imagen-slider" hidden/>
+          
+
+          <div class="slider" id="slider">
+          
+            <div class="slider__section"><img class="imgSlider" src="imagen/slider2.png" alt="xx" class="slider__img">
+            </div>
+
+            <div class="slider__section"><img class="imgSlider" src="imagen/slider4.jpg" alt="xx" class="slider__img">
+            </div>
+
+            <div class="slider__section"><img class="imgSlider" src="imagen/slider1.png" alt="xx" class="slider__img">
+            </div>
+
+            <div class="slider__section"><img class="imgSlider" src="imagen/slider6.png" alt="xx" class="slider__img">
+            </div>  
+              
+          </div>
+          
+          <div class="paginacion">
+
+            <label class="paginacion-item" for="1">
+                <img class="imgSlider" src="imagen/slider2.png" alt="xx">
+
+            </label>
+
+            <label class="paginacion-item" for="2">
+                <img class="imgSlider" src="imagen/slider4.jpg" alt="xx">
+
+            </label>
+
+            <label class="paginacion-item" for="3">
+                <img class="imgSlider" src="imagen/slider1.png" alt="xx">
+
+            </label>
+
+            <label class="paginacion-item" for="4">
+                <img class="imgSlider" src="imagen/slider6.png" alt="xx">
+
+            </label>
+          </div>
+          
+        </div>
+      </seccion>
+
+     
+
+      <section id="linkaccesos" class="linkAcceso"> <!-- Seccion con links de acceso a la seccion de legislacion y servicios-->
+
+        <div >
+
+          <a  href="html/servicios.html#seguridadehigiene"><img src="imagen/iconoseguridad.png" alt="seguridad e higiene" 
+          height="100" lang="100"></a>
+
+          <h2>Seguridad e Higiene</h2>
+          
+          <p>Plan de Monitoreos, Evaluación de Vibraciones Humanas, Evaluación de Estres Térmico, Estudios Ergonómicos.</p>
+            
+          <a href="html/servicios.html#seguridadehigiene">ver mas</a>
+        </div>
+
+        <div >
+          <a href="html/servicios.html#medioambiente"><img src="imagen/medioambienteico.png" alt="medio ambiente" 
+          height="100" lang="100"></a>
+          <h2>Medio Ambiente</h2>
+          
+          <p>Asesoramiento de Gestión Ambiental
+          Plan de Monitoreos, Categorización
+          Recategorización, Residuos, Efluentes
+          Gaseosos, Efluentes Líquidos.</p>
+          
+          <a href="html/servicios.html#medioambiente">ver mas</a> 
+        </div>
+
+        <div >
+          <a href="html/legislacion.html"><img src="imagen/legislacionicon.png" alt="legislacion"
+          height="100" lang="100"></a>
+          
+          <h2>Legislación</h2>
+          
+          <p>Matriz de Requisitos Legales Online, Actualización legislativa, Auditorías de Diagnóstico/ Cumplimiento.</p>
+          
+          <a href="html/legislacion.html">ver mas</a>
+
+        </div>
+      
+
+        
+      </section> 
+
+     
+  
+
+      <section class="clientes"> <!--Seccion de nuestros clientes-->
+       
+       
+      <h2>Nuestros Clientes</h2>
+      <div data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="1500">
+        <img src="imagen/Logos-varios1.jpg" alt="Empresas">
+      </div>
+        
+       
+      </section>
+
+      
+
+      <section id="novedades" class="novedades"> <!--Seccion de novedades-->
+
+        <h2>NOVEDADES</h2>
+        
+        <div class="novedadesVideos">
+          <div> 
+            <h3>Rol de de Higiene y Seguridad en épocas de pandemia</h3>
+            <iframe width="350rem" height="300rem"src="https://www.youtube.com/embed/cg8DokXyuw4" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <div>
+            <h3>Comisión de Igualdad de Oportunidades y de Trato</h3>
+            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/XXQjrA2Rl-0" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <div>
+            <h3>Nuevo Sistema de Trámites ONLINE de OPDS</h3>
+            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/eG3GZ0Cx2iU" title="YouTube video player" frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+
+          <div>
+            <h3>Subsecretaria de Planificación Ambiental y Desarrollo Sostenible</h3>
+            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/QM_GYSLv6wQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+
+     
+
+      <section class="entidades"> <!--Seccion de Entidades Reguladoras-->
+        <h2>Entidades Reguladoras</h2>
+        <div id="entidadesreg">
+          <a href="https://www.iso.org/" target="_blank"><img src="imagen/iso-icon.png" alt="Normas ISO" width="150" lang="150"></a>
+          <a href="https://www.ambiente.gba.gob.ar/" target="_blank"><img src="imagen/opdslog.jpg" alt="Normas ISO" width="150" lang="150"></a>
+          <a href="https://www.argentina.gob.ar/srt" target="_blank"><img src="imagen/SRTlog.jpg" alt="Normas ISO" width="150" lang="150"></a>
+          <a href="https://iram.org.ar/" target="_blank"><img src="imagen/iramlogo.png" alt="Normas ISO" width="150" lang="150"></a>
+         
+        </div>
+        
+      </section>
+     
+
+    </main>
+
+  
+    
+
+    <footer > <!--Pie de pagina-->
+     
+      
+      <section  class="seccionFooterA">
+
+      <section class="mapaLogo">
+
+        <div id="logotitulofooter" class="logoSegundo"> <!--Logo + Titulo para el footer-->
+          <a href="index.html"><img src="imagen/logochico.png" alt="logoprincipal" height="150" lang=""/>
+          </a>
+          <p> Consultora de Seguridad, Higiene y Medio ambiente</p>
+          
+        </div>
+
+
+        <nav class="navMapSitio"> <!--Mapa de Sitio-->
+        
+          <h2>Mapa de Sitio</h2>
+
+          <ul  class="menuA">
+
+            <li id="menu1">
+
+              <a href="#linkaccesos">Servicios</a>
+
+              <ul class="menu1">
+                <li><a href="#linkaccesos">Seguridad e Higiene</a></li>
+                <li><a href="#linkaccesos">Medio Ambiente</a></li>
+              </ul>
+
+            </li>
+
+            <li id="menu2"  >
+
+              <a href="#linkaccesos">Legislación</a>
+
+              <ul class="menu2">
+                <li><a href="html/legislacion.html#nacional">Nacional</a></li>
+                <li><a href="html/legislacion.html#provincial">Provincia de Buenos Aires</a></li>
+                <li><a href="html/legislacion.html#caba">CABA</a></li>           
+              </ul>
+            </li>
+
+            <li id="menu3">
+
+              <a href="#entidadesreg">Entidades Reguladoras</a>
+
+              <ul class="menu1">
+                <li><a href="https://www.ambiente.gba.gob.ar/"target="_blank">OPDS</a></li>
+                <li><a href="https://www.argentina.gob.ar/srt" target="_blank">SRT</a></li>
+                <li><a href="https://iram.org.ar/" target="_blank">IRAM</a></li>
+                <li><a href="https://www.iso.org/" target="_blank">ISO</a></li>             
+              </ul>
+            </li>
+            
+          </ul>
+          
+        </nav>
+
+        <div id="iconpoketredsocial" class="redesSociales"> <!--Acceso a Redes Sociales-->
+          <img src="imagen/iconosredes.png" alt="redes sociales" height="50" lang="50"> 
+
+        </div>
+      </section>
+        
+     
+
+        
+
+      
+      
+      </section>
+      
+      <section class="copyRight">
+        <div id="desplazador" class="desplazador"> <!--boton que desplaza al encabezado de la pagina-->
+          <a href="#"><img src="imagen/flecha.png" alt="X" height="30" width="30"></a>
+        </div>
+        <div id="leyendacopyright" > <!-- leyenda de copyright-->
+          <h4>Copyright © 2022 - SegurApp Argentina. Todos los derechos reservados </h4>
+        </div>
+      </section>
+          
+    </footer>
+
+    <!-- AOS animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
