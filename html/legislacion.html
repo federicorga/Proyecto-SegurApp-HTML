@@ -4,46 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Legislacion</title>
   </head>
 
-  <body>
+  <body class="containter-fluid">
 
-    <header > <!--Cabecera-->
-
-    
-      <!--logo + menu principal de Navegación-->
-
-      <div id="logoUno" class="imgLogoP"><!--Logo principal-->
-        <a href="../index.html"><img src="../imagen/logochico.png" alt="logoprincipal" height="120"/></a> 
-      </div>
-
-      
-
-      <nav  id="navegacionPrincipal" class="navegacion" > <!--Menu principal de navegacion--> 
-
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="quienessomos.html">Quienes somos</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="legislacion.html">Legislación</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navegacion contenedorHead row">
+          <div class="container-fluid contenedorHead imgLogoP">
+            <a class="navbar-brand logoPrincipal col-sm-12 col-md-2 col-xl-4" href="../index.html"><img src="../imagen/logochico.png" alt="logo" height="120"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-sm-12 col-md-2 col-xl-6" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="legislacion.html">Legislación</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+              </div>
+              <div class="buscar col-sm-12 col-md-4 col-xl-2"> <!--buscador-->
+                  <input type="text" placeholder="Buscar" required>
+              </div>
+          </div>
       </nav>
-
-      <div class="buscar"> <!--buscador-->
-        <input type="text" placeholder="Buscar" required>
-      </div>
-
-      
-    </header>  
+    </header>
 
 
     <main> <!--Contenido Principal-->
       <section id="tituloLegislacion"> <!--TITULO-->
         <div class="tituloPaginaSecundaria">
-        <h1>Legislación</h1>
+        <h1 class="animate__animated animate__fadeIn">Legislación</h1>
       </div>
       <div class="Sombra1">
       </div>
@@ -56,6 +65,7 @@
         <div>
           
           <h2 id="nacional">Nación</h2>
+          <div class="liner2"></div>
           
           <ul>
             <a href=""><li>Higiene y seguridad en el trabajo</li></a>
@@ -82,6 +92,7 @@
 
         <div>
           <h2 id="provincial">Provincia de Buenos Aires</h2>
+          <div class="liner2"></div>
         
           <ul>
             <a href=""><li>Aparatos sometidos a presión</li></a>
@@ -104,6 +115,7 @@
         
         <div>
           <h2 id="caba">Ciudad autónoma de Buenos Aires</h2>
+          <div class="liner2"></div>
        
           <ul>
             <a href=""><li>Residuos peligrosos</li> </a>
@@ -116,9 +128,10 @@
 
       </section>
 
-
+     
       <section class="entidades"> <!--Seccion de Entidades Reguladoras-->
         <h2>Entidades Reguladoras</h2>
+        <div class="liner"></div>
         <div id="entidadesreg">
           
           <a href="https://www.iso.org/" target="_blank"><img src="../imagen/iso-icon.png" alt="Normas ISO" width="150" lang="150"></a>
@@ -131,13 +144,12 @@
       </section>
     </main>
 
-    <br>
-    <hr>
-
+   
     <footer > <!--Pie de pagina-->
      
       
       <section  class="seccionFooterA">
+
       <section class="mapaLogo">
 
         <div id="logotitulofooter" class="logoSegundo"> <!--Logo + Titulo para el footer-->
@@ -149,10 +161,11 @@
 
 
         <nav class="navMapSitio"> <!--Mapa de Sitio-->
-        
-          <h2>Mapa de Sitio</h2>
+          
+          <h2 class="tituloMapSitio">Mapa de Sitio</h2>
+          
 
-          <ul  class="menuA">
+          <ul class="menuA">
 
             <li id="menu1">
 
@@ -205,18 +218,28 @@
       
       
       </section>
+      
       <div id="desplazador" class="desplazador" data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"> <!--boton que desplaza al encabezado de la pagina-->
         <a href="#"><img src="../imagen/flechaup.png" alt=""></a>
       </div>
       <section class="copyRight">
-        
         <div id="leyendacopyright" > <!-- leyenda de copyright-->
           <h4>Copyright © 2022 - SegurApp Argentina. Todos los derechos reservados </h4>
         </div>
       </section>
           
     </footer>
+
+    <!-- EXTRAS -->
+    <!-- AOS animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- JavaScript Bundle with Popper boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     
   </body>
 </html>

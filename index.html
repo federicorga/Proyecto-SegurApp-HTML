@@ -4,49 +4,60 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/estilo.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     
     
     <title>SegurAPP</title>
   </head>
 
-  <body>
+  <body class="containter-fluid">
 
-    <header > <!--Cabecera-->
-
-    
-      <!--logo + menu principal de Navegación-->
-
-      <div id="logoUno" class="imgLogoP"><!--Logo principal-->
-        <a href="index.html"><img src="imagen/logochico.png" alt="logoprincipal" height="120"/></a> 
-      </div>
-
-      
-
-      <nav  id="navegacionPrincipal" class="navegacion" > <!--Menu principal de navegacion--> 
-
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="html/quienessomos.html">Quienes somos</a></li>
-          <li><a href="html/servicios.html">Servicios</a></li>
-          <li><a href="html/legislacion.html">Legislación</a></li>
-          <li><a href="html/contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navegacion contenedorHead row">
+          <div class="container-fluid contenedorHead imgLogoP">
+            <a class="navbar-brand logoPrincipal col-sm-12 col-md-12 col-xl-4" href="#"><img src="imagen/logochico.png" alt="logo" height="120"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-sm-12 col-md-12 col-xl-6" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="html/quienessomos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="html/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="html/legislacion.html">Legislación</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="html/contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+              </div>
+              <div class="buscar col-sm-1 col-md-6 col-xl-2"> <!--buscador-->
+                  <input type="text" placeholder="Buscar" required>
+              </div>
+          </div>
+         
+  
       </nav>
-
-      <div class="buscar"> <!--buscador-->
-        <input type="text" placeholder="Buscar" required>
-      </div>
-
       
-    </header> 
+
+    </header>
 
 
     <main> <!--Contenido Principal-->
+
+     
 
       <seccion class="seccionSlider">
         <div class="contenedor-slider">
@@ -118,6 +129,7 @@
         <div >
           <a href="html/servicios.html#medioambiente"><img src="imagen/medioambienteico.png" alt="medio ambiente" 
           height="100" lang="100"></a>
+
           <h2>Medio Ambiente</h2>
           
           <p>Asesoramiento de Gestión Ambiental
@@ -147,10 +159,11 @@
      
   
 
-      <section class="clientes"> <!--Seccion de nuestros clientes-->
+      <section class="clientes img-fluid max-width: 100%"> <!--Seccion de nuestros clientes-->
        
        
       <h2>Nuestros Clientes</h2>
+      <div class="liner"></div>
       <div data-aos="fade-down"
         data-aos-easing="linear"
         data-aos-duration="1500">
@@ -165,30 +178,32 @@
       <section id="novedades" class="novedades"> <!--Seccion de novedades-->
 
         <h2>NOVEDADES</h2>
+        <div class="liner3"></div>
         
-        <div class="novedadesVideos">
-          <div> 
-            <h3>Rol de de Higiene y Seguridad en épocas de pandemia</h3>
+        <div class="row justify-content-center novedadesVideos">
+          <div class="col-xl-6 col-md-6"> 
+            <h3 class="text-wrap">Rol de de Higiene y Seguridad en épocas de pandemia</h3>
             <iframe width="350rem" height="300rem"src="https://www.youtube.com/embed/cg8DokXyuw4" title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           
-          <div>
-            <h3>Comisión de Igualdad de Oportunidades y de Trato</h3>
+          <div class="col-xl-6 col-md-6 ">
+            <h3 class="text-wrap">Comisión de Igualdad de Oportunidades y de Trato</h3>
             <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/XXQjrA2Rl-0" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
           
-          <div>
-            <h3>Nuevo Sistema de Trámites ONLINE de OPDS</h3>
+          <div class="col-xl-6 col-md-6 ">
+            <h3 class="text-wrap">Nuevo Sistema de Trámites ONLINE</h3>
             <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/eG3GZ0Cx2iU" title="YouTube video player" frameborder="0" 
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
 
-          <div>
-            <h3>Subsecretaria de Planificación Ambiental y Desarrollo Sostenible</h3>
+          <div class="col-xl-6 col-md-6 ">
+            <h3 class="text-wrap">Subsecretaria de Planificación Ambiental</h3>
             <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/QM_GYSLv6wQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
+
         </div>
       </section>
 
@@ -196,6 +211,7 @@
 
       <section class="entidades"> <!--Seccion de Entidades Reguladoras-->
         <h2>Entidades Reguladoras</h2>
+        <div class="liner"></div>
         <div id="entidadesreg">
           <a href="https://www.iso.org/" target="_blank"><img src="imagen/iso-icon.png" alt="Normas ISO" width="150" lang="150"></a>
           <a href="https://www.ambiente.gba.gob.ar/" target="_blank"><img src="imagen/opdslog.jpg" alt="Normas ISO" width="150" lang="150"></a>
@@ -228,10 +244,11 @@
 
 
         <nav class="navMapSitio"> <!--Mapa de Sitio-->
-        
-          <h2>Mapa de Sitio</h2>
+          
+          <h2 class="tituloMapSitio">Mapa de Sitio</h2>
+          
 
-          <ul  class="menuA">
+          <ul class="menuA">
 
             <li id="menu1">
 
@@ -297,10 +314,15 @@
           
     </footer>
 
+    
+<!-- EXTRAS -->
     <!-- AOS animacion -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script>
       AOS.init();
     </script>
+
+    <!-- JavaScript Bundle with Popper boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 </html>

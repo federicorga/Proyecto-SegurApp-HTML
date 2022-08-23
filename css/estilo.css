@@ -1,22 +1,22 @@
-/* RESETEO */
+/* -----------------------------------------------------------------------------------------------RESETEO */
 
     *{
         margin: 0;
-    padding: 0;
+        padding: 0;
     }
 
     html{
-        font-size: 1rem;
+        font-size: 0.9rem;
         scroll-behavior: smooth;
         
     }
-/*----------------------------------------------------pagina animate*/   
+/*--------------------------------------------------------------------------------------------pagina animate*/   
     @import 'animate.css';
-/* ---------------------------------------------------GOOGLE FONT */
+/* ------------------------------------------------------------------------------------------GOOGLE FONT */
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto:wght@100&display=swap');
 
 
-/*-------------------------------------------------------------ESTILOS GENERALES*/
+/*---------------------------------------------------------------------------------------------ESTILOS GENERALES*/
 
     body{
         background-image: linear-gradient(white, rgb(136, 136, 136) );
@@ -27,17 +27,44 @@
         font-style: normal;
         color: #333;
         font-size: 1rem;
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "main"
-        "footer"; 
-       width: 100%;
-       height: 100%;
+      
+       
        
               
     }
 
+    .liner{
+    height: 2px;
+    background: #acb336;
+    margin-bottom: 2rem;
+    width: 150px;
+    margin-left:auto;
+    margin-right:auto;
+    
+
+    }
+
+    .liner2{
+    display:flex;
+     height: 4px;
+    background: #acb336;
+    margin-bottom: 2rem;
+    width: 50px;
+    
+    margin-right:auto;
+    }
+
+    .liner3{
+    height: 2px;
+    background: rgb(165 101 39);
+    margin-bottom: 2rem;
+    width: 110px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+    
+
+    
 
 
 
@@ -47,31 +74,12 @@
         
     
 
+  
     
 
-    
+/*------------------------------------------------------------------------------------------------HEADER */
 
-/*-------------------------------------------------------------------------- HEADER */
 
-    header{
-        grid-area: header;
-        display: flex;
-        background-color: white;
-        text-align: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 100%
-    
-   
-    
-    }
-
-    .imgLogoP{
-        display: flex;
-    }
     .imgLogoP a :hover{
         transition: 0.5s;
         transform: scale(1.2);
@@ -85,81 +93,48 @@
 
  
     
-    .navegacion {
-        
-       
-        text-align: center;
-        
-        
-    }
-
-
-    .navegacion ul{
-        
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        
-    }
-
-   
-
-
-    .navegacion li {
-        display: flex;
-        text-align: center;
-        text-transform: uppercase;
-        padding-right: 1rem;
-        
-       
-        
-        
-    }
     .navegacion a{
-        
-        color: rgb(0, 147, 221);
-        list-style: none;
-        text-decoration: none;
-        text-align: center;
-        font-weight: bold;
+        color: #acb336;
+        font-size: 1.3rem;
+        display:flex;
+        justify-self:center;
+        font-family: "Montserrat";
         
         
     }
-    
 
     .navegacion li :hover{
-        transform: scale(1.2);
+        scale: 1.1;
         transition: 0.5s;
-        color: rgb(128, 193, 26);
-        font-weight: bold;
-        text-align: center;
-    
+        color: rgb(128, 193, 26) ;
+        /* color: rgb(0, 147, 221) */
+    }
+
+    .buscar{
         
+        
+       
+        flex-wrap: wrap;
+        padding-top: 1rem;
+       
     }
-
-    .navegacion li :active{
-        transition: 0.5s;
-        transform: scale(0.5);
-    }
-
 
     .buscar input{
-        
+            
         width: 4%;
         box-sizing: border-box;
         border: 3px solid #ccc;
         border-radius: 100px;
-       
         background-color: white;
         background-image: url(../imagen/searchicon.png);
         background-position: 10px 10px;
         background-repeat: no-repeat;
-        padding: 12px 20px 13px 20px;
-      
-    }
+        padding: 12px 20px 6px 20px;
+        margin-right: 10px;
+        
     
+    }
+
     .buscar input[type=text]:focus {
         width: 90%;
         font-size: 15px;
@@ -167,7 +142,7 @@
         border: 2px solid #ccc;
         background-position: 10px 10px; 
         background-repeat: no-repeat;
-        padding: 12px 20px 12px 40px;
+        padding: 12px 20px 6px 40px;
         -webkit-transition: width 0.4s ease-in-out;
         transition: width 0.4s ease-in-out;
         text-align: left;
@@ -177,8 +152,7 @@
 
 
 
-
-     /*------------------------------------------------- Mapa de pagina + Footer*/
+     /*-----------------------------------------------------------------------------------Mapa de pagina + Footer*/
 
 
     footer{
@@ -251,78 +225,49 @@
           
            text-align: center;
         }
-    
-     
-       
-    
-    
-        .mapaLogo{
-            display: flex;
-            background: linear-gradient(179deg, #403d39, #16161561);
-            text-align: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-    
-        
-        .mapaLogo nav{
-            
-            text-align: center;
-        }
-      
-      
-        .mapaLogo nav h2 {
+
+        .tituloMapSitio{
             text-align: center;
             color: #bbbbbb;
             font-size: 1.4rem;
-           margin-bottom: 1rem;
+            margin-bottom: 1rem;
             font-weight: bold;
             text-transform: uppercase;
-            
-           
         }
-    
-        
-        
-        .navMapSitio{
-            display: flex;
-            flex-wrap: wrap;
-            
-            flex-direction: column;
-        }
-    
-        .menuA{
 
-            font-weight: bold;
-            display: inline-flex;
-            text-align: center;
+
+        .menuA {
+            display: flex;
+            padding: 0;
+            justify-content: space-evenly;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-evenly;
-           
-            
+            line-height: 1.7;
         }
-    
-        .menuA li{
-    
-            padding:0.5rem;
-            list-style: none;
-            text-decoration: none;
-            text-align: center;
-           
-            
-        }
-    
+
         .menuA a{
             color: wheat;
-            list-style: none;
             text-decoration: none;
-            letter-spacing: 1px;
             line-height: 1.5;
             text-transform: uppercase;
-               
+
             
+        }
+
+        
+
+        .menuA ul{
+            display: flex;
+            padding: 0;
+            margin: 0;
+            flex-wrap: wrap;
+            flex-direction: column;
+            
+            
+        }
+
+        .menuA li{
+            list-style: none;
             
         }
 
@@ -330,27 +275,29 @@
             transition: 0.5s;
             color: #80c11a;
         }
-        .menu1{
-            
-            font-weight: lighter;
-            font-size: 14px;
-            text-align: center;
-            
-            
+
+        .menu1 ul{
+            margin: 0;
         }
-    
+
         .menu1 a{
-            text-transform: initial;
-            
             color: #888888;
+            text-transform: initial;
         }
+
+    
+    
+     
+       
+    
         
-/* -------------------------------------------------------- del footer copyright */
+/* -------------------------------------------------------------------------------------del footer copyright */
 
 .copyRight{
     background-color: #252422;
     color: #a4a4a4;
     text-align: center;
+    
     }
 
     .copyRight div{
@@ -358,10 +305,14 @@
         padding-top: 1rem;
     }
 
+    .copyRight h4{
+        font-size: 1rem;
+    }
+
     
     
     
-    /* ----------------------------------------------------redes Sociales */
+    /* ----------------------------------------------------------------------------------redes Sociales */
     
         .redesSociales{
             
@@ -379,7 +330,7 @@
 
 
 
-/* ---------------------------------------------------------ESTILOS */
+/* ----------------------------------------------------------------------------------------------ESTILOS */
 
 .Sombra1 {
         
@@ -400,21 +351,13 @@
 }
 
 .tituloPaginaSecundaria{
-    background: url(../imagen/salud-ocupacional.jpg) no-repeat fixed;
+    background: linear-gradient(rgb(6 6 6 / 0%) 0%, rgb(0 0 0 / 0%) 100%), url(../imagen/HomeLOMBARDI-31.jpg) no-repeat fixed;
    
     height: 18rem;
     
-   
     justify-content: center;
     
     top: 0;
-    
-    background-size:cover;
-    
-
-    
-    
-    
 
     background-position-x: 50%;
     background-position-y: 0;
@@ -440,7 +383,11 @@
     text-shadow: 1px 1px #333, -1px 1px #333, 1px -1px #333, -1px -1px #333;
 }
 
-/* -------------------------------------------------------desplazador */
+.animate__animated.animate__fadeIn{
+    --animate-duration: 5s;
+}
+
+/* ----------------------------------------------------------------------------------------------desplazador */
 
 .desplazador {
     position: absolute;
@@ -487,7 +434,7 @@
 
 
  
-/* ---------------------------------------------------MAIN */
+/* -------------------------------------------------------------------------------------------MAIN */
 
 main{
 
@@ -500,10 +447,10 @@ main{
 
 
 
-/* ---------------------------------------------------- HTML INDEX */
+/* -----------------------------------------------------------------------------------------HTML INDEX */
 
     
-/*---------------------------------- inicio de Slider*/
+/*--------------------------------------------------------------------------------------- inicio de Slider*/
 
 
 
@@ -519,6 +466,8 @@ main{
 
 .imgSlider{
     max-width: 100%;
+    padding-right: 2rem;
+    margin-top: 1rem;
    
 }
 
@@ -545,12 +494,6 @@ main{
     
 }
 
-.imgSlider{
-
-    padding-right: 2rem;
-    
-    
-}
     
 
 
@@ -679,7 +622,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
 
 
-/*------------------------------------------- Fin de Slider*/
+/*-----------------------------------------------------------------------------------------------Fin de Slider*/
   
  
   .linkAcceso{
@@ -721,7 +664,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 .linkAcceso h2{
     font-size: 1.2rem;
     text-transform: uppercase;
-    color: wheat;
+    color: #f5deb38a;
 }
 
 
@@ -730,7 +673,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
   .linkAcceso img{
     filter:  sepia(85%);
     width: 5rem;
-    height: 5rem;
+    height: 6rem;
     text-align: center;
     padding-bottom: 1rem;
   }
@@ -792,6 +735,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
         
         
         text-align: center;
+        margin-top: 10px;
         box-shadow: 1px 2px 34px 7px rgba(0,0,0,0.69);
         -webkit-box-shadow: 1px 2px 34px 7px rgba(0,0,0,0.69);
         -moz-box-shadow: 1px 2px 34px 7px rgba(0,0,0,0.69);
@@ -809,67 +753,51 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
     .novedades{
         background-color: #403D39;
-        display: flex;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        text-align: center;
-        color: #bbbbbb;
-        
-        
-        object-fit: contain;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
+      
+      
 
     }
 
     .novedades h2{
         color: wheat;
-        padding-bottom: 50px;
+        
         line-height: 1.5;
         letter-spacing: 1px;
         font-size: 30px;
+        text-align: center;
         
     }
 
-
-    
-
     .novedadesVideos{
-        display: flex;
-    text-align: center;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90%;
-    justify-content: center;
+        text-align: center;
+    
+       
     }
 
     .novedadesVideos h3{
-        text-align: center;
-        width: 25rem;
-        padding: 30px;
-        
-        
+        color:#bbbbbb;
+        font-size: 1.4rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+
     }
 
-    .novedadesVideos inframe{
-        text-align: center;
-        width: 100%;
-        height: 100%;
-    }
+
+   
+
+
   
 
   
 
 
-/* ----------------------------------------------------------Entidades Reguladoras*/
+/* ---------------------------------------------------------------------------------------------Entidades Reguladoras*/
 
     .entidades{
         display: flex;
         background-color: white;
         padding-top: 30px;
-        padding-bottom: 30px;
+    
         text-align: center;
         color: #333;
         font-size: 1.2rem;
@@ -879,9 +807,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
         flex-direction: column;
     }
 
-    .entidades h2{
-        padding-bottom: 2rem;
-    }
+  
 
     .entidades div{
         display: flex;
@@ -907,7 +833,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
 
 
-/*-------------------------------------------------------HTML Servicios*/
+/*---------------------------------------------------------------------------------------------HTML Servicios*/
 
 .fa {padding-right: 30px;
     padding-right: 20px;
@@ -916,39 +842,39 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
 }
 
+
+.seH{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.meD{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+
 .serviciosPag{
     padding-top: 20px;
-    text-align: center;
-    padding-bottom: 40px;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    
-}
-
-.serviciosPag div{
-    display: inline-flex;
-   
-    padding-top: 20px;
     text-align: left;
-    
-    
+    padding-bottom: 40px;
+    background-image: linear-gradient(white, rgb(136, 136, 136) );
+
 }
 
-.serviciosPag ul{
-    list-style: none;
-    text-decoration: none;
-    width: 120%;
-    padding-left: 2rem;
-}
 
 .serviciosPag h2{
+    text-align: center;
+    padding-top: 20px;
     padding-bottom: 20px;
-    
 }
+
+
 
 .publicidad{
     display: flex;
@@ -956,6 +882,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
     flex-direction: row;
     justify-content: center;
     background-image: linear-gradient(white, rgb(136, 136, 136) );
+    padding-top: 10px;
 }
 
 .publicidad img{
@@ -964,9 +891,22 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 }
 
 
+.caroruselImg{
+    display: flex;
+    width: 400px;
+    height: 800px;
+}
+
+.caroruselImg img{
+    display: contents;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+   
+}
 
 
-/* ------------------------------------------------HTML Legislacion */
+/* -----------------------------------------------------------------------------------------HTML Legislacion */
 
 
 
@@ -999,7 +939,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 .normativasLegislacion h2{
     text-align: left;
     padding-top: 20px;
-    padding-bottom: 20px;
+   
   border-bottom: green 2px;
   width: 15rem;
 
@@ -1024,14 +964,14 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
 
 
-/* ---------------------------------------------------------CONTACTO */
+/* --------------------------------------------------------------------------------------------------CONTACTO */
 
 .EmpresaContacto{
     display: flex;
     flex-direction: row;
     text-align: center;
     margin-top: 20px;
-    padding-top: 20px;
+
     padding-bottom: 40px;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -1094,19 +1034,31 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
     font-weight: normal;
 }
 
+.tituloFormulario{
+  text-align: center;
+    border-bottom: 5px rgb(22 62 84) ridge;
+    text-transform: uppercase;
+    font-weight: bold;
+  
+  }
 
 .formularioContacto{
-    width: 35rem;
-    background: rgb(0, 0 , 0 ,0.1);
+        width: 35rem;
     border-radius: 1rem;
+    background: linear-gradient(359deg, #6a6e72, transparent);
+     box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
 }
 
 .formularioContacto form{
-    padding-top: 2rem;
+    padding-top: 1rem;
     text-align: left;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    border-radius: 10px;
+   
     
 
 }
@@ -1125,8 +1077,8 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
     border: 1px solid #36bcdd;
     text-align: left;
     height: 50px;
-    width: 500px;
-    margin-bottom: 20px;
+    width: 450px;
+    
     border-radius: 1rem;
 }
 
@@ -1151,8 +1103,8 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
     
         display: flex;
         font: 100 14px/40px "Roboto", sans-serif;
-        margin-top: 6px;
-        width: 140px;
+        
+        width: 160px;
         color: rgb(255, 255, 255);
         text-align: center;
         cursor: pointer;
@@ -1190,31 +1142,31 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 }
 
 
-/* --------------------------------------------------------Quienes somos */
+/* -------------------------------------------------------------------------------------------------------Quienes somos */
 
 .quienSomos{
     
-    padding-top: 40px;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-right: 100px;
-    padding-left: 60px;
-    font-size: 1.1rem;
-    text-align: justify;   
-
-    
+    flex-wrap: wrap;
+    padding-top: 5rem;
     
 }
 
 
 .quienSomos h2{
     padding-bottom: 20px;
+    text-align: center;
 }
 .quienSomos p{
 
     text-align: justify;
-    line-height: 1.4;
+    line-height: 1.6;
+
+    max-width: 38rem;
+    margin: 1rem;
     
 
     
@@ -1224,11 +1176,10 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
 
 .quienSomos img{
-    display: block;
-    text-align: center;
-    margin-left: 40px;
+
     
     border-radius: 2rem;
+    margin-left: 20px;
 }
 
 .buttonC {
@@ -1253,31 +1204,12 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
 
 
 
- /*---------------------------------------------------------------------------MEDIA QUERY*/
-/* Tablet Ipad */
+ /*-----------------------------------------------------------------------------------------------------MEDIA QUERY*/
+
  
  
-/* Celular mini Nokia Lumia 520 */
- @media(max-width: 320px){
-    .menuA{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        
-
-    }
-  
-
-  
-}
-
-@media(max-width: 400px) and (max-height: 600px){
 
 
-    .novedades{
-        display: none;
-    }
-}
 /* Celular promedio: IphonX  - LG optimuns 70 - Nokia N9 - Galaxy j7 Prime  TABLET: Ipad*/
 @media (min-width:320px) and (max-width:1080px) and (min-height: 400px) {
     
@@ -1295,35 +1227,19 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
        
     }
 
-    header{
-        
-        flex-direction: column;
-       
-    }
+  
 
     .imgLogoP{
-        padding-right: 5px;
-    }
+        display: flex;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;}
 
-    .slider img{
-        width: 90rem;
-    }
 
-   
 
-    .buscar{
-        padding-bottom: 1rem;
-    }
-
-    .navegacion ul{
-        
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .navegacion li{
-        padding-bottom: 5px;
-    }
+    .navegacion a{
+    justify-content: center;}
 
 
     .logoSegundo{
@@ -1339,7 +1255,7 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
         
         
         
-        
+        display: flex;
         flex-direction: column;
        
         align-items: center;
@@ -1348,8 +1264,11 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
     }
 
     .menuA{
-        flex-wrap: wrap;
+        flex-direction: column;
+        margin-top: 1rem;
     }
+
+
     .linkAcceso{
         
         flex-wrap: wrap;
@@ -1427,10 +1346,11 @@ input[id="4"]:checked ~ .paginacion .paginacion-item[for="4"]{
    }
 
    .formularioContacto{
-    width: 25rem;
+    width: 94%
    }
    .buttonContact{
     width: 20rem;
+    padding-left:2rem;
    }
 
    .publicidad{

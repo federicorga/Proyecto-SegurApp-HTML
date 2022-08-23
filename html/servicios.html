@@ -4,40 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://kit.fontawesome.com/1c15d07e8a.js" crossorigin="anonymous"></script>
     <title>Servicios</title>
   </head>
 
-  <body>
+  <body class="containter-fluid">
    
-    <header > <!--Cabecera-->
-
-    
-      <!--logo + menu principal de Navegación-->
-
-      <div id="logoUno" class="imgLogoP"><!--Logo principal-->
-        <a href="../index.html"><img src="../imagen/logochico.png" alt="logoprincipal" height="120"/></a> 
-      </div>
-
-      
-
-      <nav  id="navegacionPrincipal" class="navegacion" > <!--Menu principal de navegacion--> 
-
-        <ul>
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="quienessomos.html">Quienes somos</a></li>
-          <li><a href="servicios.html">Servicios</a></li>
-          <li><a href="legislacion.html">Legislación</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light navegacion contenedorHead row">
+          <div class="container-fluid contenedorHead imgLogoP">
+            <a class="navbar-brand logoPrincipal col-sm-12 col-md-2 col-xl-4" href="../index.html"><img src="../imagen/logochico.png" alt="logo" height="120"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse col-sm-12 col-md-2 col-xl-6" id="navbarNav">
+                  <ul class="navbar-nav">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="legislacion.html">Legislación</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                  </ul>
+              </div>
+              <div class="buscar col-sm-12 col-md-4 col-xl-2"> <!--buscador-->
+                  <input type="text" placeholder="Buscar" required>
+              </div>
+          </div>
       </nav>
-
-      <div class="buscar"> <!--buscador-->
-        <input type="text" placeholder="Buscar" required>
-      </div>
-
-      
     </header>
 
     
@@ -45,7 +54,7 @@
   
       <section id="tituloservicios"> <!--TITULO-->
         <div class="tituloPaginaSecundaria">
-          <h1>Servicios</h1>
+          <h1 class="animate__animated animate__fadeIn">Servicios</h1>
       
         </div>
         <div class="Sombra1">
@@ -55,68 +64,121 @@
 
       
 
-     
-      
-      
-      <section class="serviciosPag"> <!--Seccion Servicios-->
-        
-        
-          <div>
-            <ul>
-              <h2 id="seguridadhigiene">HIGIEN Y SEGURIDAD EN EL TRABAJO</h2>
-              <li><i class="fa fa-chevron-circle-right"></i>Servicio de Higiene y Seguridad en el Trabajo</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Análisis de Riesgos por Puesto de Trabajo</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Capacitación al personal</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Investigación de Accidentes de Trabajo y Enfermedades Profesionales</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Asesoramiento en Elementos de Protección Personal</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Medición de Nivel Sonoro Continuo Equivalente y Vibraciones</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Medición de Nivel Lumínico</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Medición de Carga Térmica</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Medición de Puesta a Tierra y Continuidad de las masas</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Estudio de Protección Contra Incendios</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Diseño de Instalaciones Fijas contra Incendio</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Ensayos de Artefactos Sometidos a Presión</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Estudio Ergonómico</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Medición de Contaminantes en Ambiente Laboral</li>
-            </ul>
+      <section class= "serviciosPag">
+        <h2 id="seguridadhigiene" data-aos="fade-down"
+        data-aos-duration="1500">HIGIENE Y SEGURIDAD EN EL TRABAJO</h2>
+        <div class="liner"></div>
+        <div class="seH"
+        data-aos="fade-up"
+        data-aos-duration="1500">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/img-inspector-500.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Prevencion e Investigación</h4>
+              <p class="card-text">Servicio de Higiene y Seguridad en el Trabajo; Análisis de riesgos por puesto de trabajo; Investigación de accidentes de trabajo y Enfermedades Profesionales; Capacitaciones.</p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
           </div>
-       
-          <div >
-            
-            <ul>
-              <h2 id="medioambiente">MEDIO AMBIENTE</h2>
-              <li><i class="fa fa-chevron-circle-right"></i>Servicio de asesoramiento en temática ambiental</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Factibilidad/Categorización Industrial</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Evaluación de Impacto Ambiental</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Inscripción y DDJJ de Residuos especiales</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Inscripción y DDJJ de Residuos peligrosos</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Declaración Jurada de Efluentes Líquidos ante INA</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Documentacion Tecnica ante INA/ADA</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Monitoreo de Efluentes Liquidos Industriales</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Registro y alta de usuario ante ADA</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Empadronamiento ante Acumar</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Solicitud de Permiso de Descarga de Efluentes Gaseosos</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Monitoreo de Emisiones Gaseosas</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Análisis de suelos</li>
-              <li><i class="fa fa-chevron-circle-right"></i>Análisis de freatimetros</li>
-            </ul>
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/image-fire-500.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Proteccion Contra Incendios</h4>
+              <p class="card-text">Estudio de protección contra incendios; Diseño de instalaciones fijas contra incendio;
+                Asesoramiento y realización de planes de evacuación, simulacros y afines.
+              </p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
           </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/rhysmag.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Elementos de Proteccion Personal</h4>
+              <p class="card-text">Asesoramiento en Elementos de Protección Personal; 
+                Servicios de prevención y asistencia periódica en el uso y cuidado de los mismos; Capacitaciones.</p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/medicion.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Medicion en el Puesto de Trabajo</h4>
+              <p class="card-text">Medicion de ruido; Medicion de nivel luminico; Medicion de carga térmica; 
+                Medicion de puesta a tierra y continuidad de las masas; Estudios ergonomicos; Ensayos de artefactos sometidos a presión.</p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="medioambiente"data-aos="fade-down"
+        data-aos-duration="1500">MEDIO AMBIENTE</h2>
+        <div class="liner"></div>
+        <div class="meD"
+        data-aos="fade-up"
+        data-aos-duration="1500">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/widget2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Evaluación Ambiental</h4>
+              <p class="card-text">Estudio de impacto Ambiental;Monitoreo de efluentes Liquidos industriales; Monitoreo de efluentes Gaseosos</p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/seguridad-y-medioambiente.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Mediciones Ambientales</h4>
+              <p class="card-text">Análisis de suelo; Análisis de freatimetros; Analisis de residuos especiales, Analisis de residuos peligrosos.</p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/13.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Capacitaciones Ambientales</h4>
+              <p class="card-text">Servicio de asesoramiento en temática ambiental; Gestion documental.</p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="../imagen/inspectambiental.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h4 class="card-title">Cumplimiento de Requisitos Legales - Permisos Ambientales</h4>
+              <p class="card-text">Inscripción y DDJJ de residuos especiales; Inscripción y DDJJ de residuos peligroso; Empadronamiento ante Acumar; Documentacion 
+                tecnica ante INA/ADA; Solicitud de permiso de descarga de efluentes gaseosos; Factibilidad/Categorización Industrial.  </p>
+              <a href="contacto.html#formularioContactoa" class="btn btn-primary">Consultar</a>
+            </div>
+          </div>
+        </div>
       </section>
+      
+      
+      
+
 
       <section class="novedades"> <!--Seccion videos-->
-        <div>
-          <h3>Elementos de proteccion personal</h3>
-          <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/aO7cB3F8W6U" 
-          title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
         
-        <div>
-          <h3>EPP Selección de protectores oculares y guantes</h3>
-            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/IALJcduFz0c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-        
-        <div><h3>Estudio de impacto ambiental</h3><iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/Cz6HeJIX8Ng" title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+        <div class="row justify-content-center novedadesVideos">
+          <div class="col-xl-4 col-md-4"> 
+            <h3 class="text-wrap">Elementos de proteccion personal</h3>
+            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/aO7cB3F8W6U" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <div class="col-xl-4 col-md-4 ">
+            <h3 class="text-wrap">Epp Selección de protectores oculares</h3>
+            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/KuBo1rCGJd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          
+          <div class="col-xl-4 col-md-4 ">
+            <h3 class="text-wrap">Estudio de impacto ambiental</h3>
+            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/Cz6HeJIX8Ng" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+          
       </section>
 
       <aside class="publicidad">
@@ -130,6 +192,7 @@
      
       
       <section  class="seccionFooterA">
+
       <section class="mapaLogo">
 
         <div id="logotitulofooter" class="logoSegundo"> <!--Logo + Titulo para el footer-->
@@ -141,18 +204,19 @@
 
 
         <nav class="navMapSitio"> <!--Mapa de Sitio-->
-        
-          <h2>Mapa de Sitio</h2>
+          
+          <h2 class="tituloMapSitio">Mapa de Sitio</h2>
+          
 
-          <ul  class="menuA">
+          <ul class="menuA">
 
             <li id="menu1">
 
               <a href="servicios.html">Servicios</a>
 
               <ul class="menu1">
-                <li><a href="#seguridadhigiene">Seguridad e Higiene</a></li>
-                <li><a href="#medioambiente">Medio Ambiente</a></li>
+                <li><a href="servicios.html#seguridadhigiene">Seguridad e Higiene</a></li>
+                <li><a href="servicios.html#medioambiente">Medio Ambiente</a></li>
               </ul>
 
             </li>
@@ -188,8 +252,6 @@
           <img src="../imagen/iconosredes.png" alt="redes sociales" height="50" lang="50"> 
 
         </div>
-
-        
       </section>
         
      
@@ -199,18 +261,28 @@
       
       
       </section>
+      
       <div id="desplazador" class="desplazador" data-aos="fade-up"
       data-aos-anchor-placement="top-bottom"> <!--boton que desplaza al encabezado de la pagina-->
         <a href="#"><img src="../imagen/flechaup.png" alt=""></a>
       </div>
       <section class="copyRight">
-        
         <div id="leyendacopyright" > <!-- leyenda de copyright-->
           <h4>Copyright © 2022 - SegurApp Argentina. Todos los derechos reservados </h4>
         </div>
       </section>
           
     </footer>
+
+    <!-- EXTRAS -->
+    <!-- AOS animacion -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script>
+      AOS.init();
+    </script>
+
+    <!-- JavaScript Bundle with Popper boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
   </body>
 </html>
