@@ -6,8 +6,6 @@
 /*------------------------------------------------------------------------------------------------HEADER */
 
 
-
-
 header{ 
 
    .myNav{    
@@ -31,7 +29,6 @@ header{
             //contenedor de navBar
             .myContenedorNav{
             
-                display: flex;
                 flex-direction: row;
                 align-items: center;
                 width: 100%;
@@ -48,8 +45,8 @@ header{
             
                 //Ul lista de navBar
                 .myNavList{
+
                     display: flex;
-                    
     
                     li{
                     
@@ -57,7 +54,6 @@ header{
                             scale: 1.1;
                             transition: 0.5s;
                             color: rgb(128, 193, 26) ;
-                            /* color: rgb(0, 147, 221) */
                         }
                     
     
@@ -67,10 +63,7 @@ header{
                             font-size: 1.4rem;
                             display:flex;
                             justify-self:center;
-                            
-                            
-                            
-                        
+
                         }
                     }
                 

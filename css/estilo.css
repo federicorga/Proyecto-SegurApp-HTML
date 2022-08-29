@@ -64,7 +64,6 @@ header .myNav {
       transition: 0.2s;
       transform: scale(0.5); }
     header .myNav .myContenedorNav1 .myContenedorNav {
-      display: flex;
       flex-direction: row;
       align-items: center;
       width: 100%;
@@ -80,8 +79,7 @@ header .myNav {
         header .myNav .myContenedorNav1 .myContenedorNav .myNavList li:hover {
           scale: 1.1;
           transition: 0.5s;
-          color: #80c11a;
-          /* color: rgb(0, 147, 221) */ }
+          color: #80c11a; }
         header .myNav .myContenedorNav1 .myContenedorNav .myNavList li a {
           font-family: "Lato", sans-serif;
           color: #acb336;
