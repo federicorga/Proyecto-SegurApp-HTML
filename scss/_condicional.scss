@@ -1,0 +1,47 @@
+
+
+
+
+
+$esti: clasico;
+
+//para que funcione cambiar el valor clasico por navidad
+
+
+
+@if ($esti==navidad){
+    header{
+     
+        .myNav{
+           
+            .myContenedorNav1{
+               
+                background:url(../imagen/navidades.png),linear-gradient(#ff0000 50%, #c30000 50%);
+                background-position: center;
+                .myContenedorNav{
+                
+                    .myNavList{
+                    
+                        li{
+
+        
+                            a{
+                            
+                                color: #FFFFFF;
+                                
+                                text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0), 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+                                
+                            
+                            }
+                        }
+                    
+                    }
+                }
+ 
+            }
+        }   
+    }
+
+
+}
+

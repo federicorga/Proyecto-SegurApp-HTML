@@ -19,28 +19,20 @@
 
   <body class="container-fluid">
     <header class="row">
-      <nav
-        class="navbar navbar-expand-lg bg-light navegacion contenedorHead">
-        <div class="container-fluid contenedorHead imgLogoP">
-          <a
-            class="navbar-brand logoPrincipal col-sm-12 col-md-12 col-xl-4"
-            href="#"><img src="imagen/logochico.png" alt="logo" height="120"/>
-          </a>
-          <div class="expansornav">
-            <button class="flex navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon navBarIcono"></span>
-            </button>
-          </div>
-          <div
-            class="collapse navbar-collapse col-sm-12 col-md-12 col-xl-6"
-            id="navbarNav">
-            <ul class="navbar-nav navBarNavegacion">
+
+      <nav class="navbar navbar-expand-lg bg-light myNav">
+        <div class="container-fluid myContenedorNav1">
+          <a class="navbar-brand pepe"  href="#"><img class="myImgLogo" src="imagen/logochico.png" alt="logo" height="120"/> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-nav myContenedorNav" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-lg-0 myNavList">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="html/quienessomos.html">Quienes somos</a>
+                <a class="nav-link" href="html/quienessomos.html">Quienes Somos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="html/servicios.html">Servicios</a>
@@ -52,11 +44,12 @@
                 <a class="nav-link" href="html/contacto.html">Contacto</a>
               </li>
             </ul>
-          </div>
-        </section>
-          <div class="buscar col-sm-1 col-md-6 col-xl-2">
-            <!--buscador-->
-            <input type="text" placeholder="Buscar" required />
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 barraBusqueda" type="search" placeholder="Buscar..." aria-label="Search">
+              <button class="btn btn-outline-success botonBuscar" type="submit"></button>
+            </form>
+            
           </div>
         </div>
       </nav>
@@ -112,7 +105,6 @@
 
       <section id="linkaccesos" class="linkAcceso">
         <!-- Seccion con links de acceso a la seccion de legislacion y servicios-->
-
         <div>
           <a href="html/servicios.html#seguridadehigiene">
             <img src="imagen/iconoseguridad.png" alt="seguridad e higiene" height="100" lang="100"/>
@@ -145,13 +137,11 @@
           <a href="html/legislacion.html">
             <img src="imagen/legislacionicon.png" alt="legislacion" height="100" lang="100"/>
           </a>
-
           <h2>Legislación</h2>
           <p>
             Matriz de Requisitos Legales Online, Actualización legislativa,
             Auditorías de Diagnóstico/ Cumplimiento.
           </p>
-
           <a href="html/legislacion.html">ver mas</a>
         </div>
 
@@ -251,7 +241,7 @@
             <p>Consultora de Seguridad, Higiene y Medio ambiente</p>
           </div>
 
-          <nav class="navMapSitio">
+          <nav>
             <!--Mapa de Sitio-->
 
             <h2 class="tituloMapSitio">Mapa de Sitio</h2>
@@ -319,5 +309,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous">
     </script>
+
   </body>
 </html>

@@ -1,0 +1,130 @@
+
+
+//FORMULARIO DE CONTACTO
+
+
+
+
+/*-----------------------------------------------------------------------------------------------------FORMULARIO CONTACTO*/
+
+.formularioContacto{
+    width: 25rem;
+    padding-bottom: 14px;
+    border-radius: 1rem;
+    margin-top: 5px;
+    
+    box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
+    
+
+    form{
+        padding-top: 1rem;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        border-radius: 10px;
+        
+        h2{
+            
+            border-bottom: 3px solid #36bcdd;
+        
+            padding-bottom: 1rem;
+            text-align: center;
+            margin-left: 50px;
+            margin-right: 50px;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 20px;
+    
+        }
+
+    }
+
+    label{
+        display: flex;
+        max-width: 100%;
+        margin-bottom: 5px;
+        font-weight: 700;
+        text-align: left;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    input{
+        display: flex;
+        border: none;
+        background: none;
+        border-bottom: 2px solid #36bcdd;
+        text-align: left;
+        height: 50px;
+        width: 100%;
+        margin-bottom: 16px;
+        outline: none;
+    }
+
+    textarea{
+    
+        border: 1px solid #36bcdd;
+        border-radius: 0.6rem;
+        outline: none;
+        width: 100%;
+        color: #000000;
+        font-family: $fuente-estiloA;
+
+    }
+}
+
+
+.buttonContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    input{
+        
+        display: flex;
+        font-family: $fuente-estiloA;
+        width: 160px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        cursor: pointer;
+        text-transform: uppercase;
+        /* background: #032cb3; */
+        /* background: radial-gradient(ellipse farthest-corner at center center, #003372 0%, rgba(25, 110, 163, 0.73) 80%); */
+        background: -webkit-radial-gradient(ellipse farthest-corner at center center, #002e72 0%, rgba(25, 64, 163, 0.73) 80%);
+        background: -moz-radial-gradient(ellipse farthest-corner at center center, #003172 0%, rgba(25, 94, 163, 0.73) 80%);
+        border-radius: 88px 88px 88px 88px;
+        -webkit-border-radius: 88px 88px 88px 88px;
+        -moz-border-radius: 88px 88px 88px 88px;
+        border: 2px solid #646161;
+        justify-content: center;
+        margin-top: 1rem;
+        margin-left: 2px;
+        margin-right: 2px;
+        outline: none;
+       
+    
+        
+
+
+        &:hover{
+            transition: 0.2s;
+            text-shadow: 0 0 5px wheat;
+        }
+
+        &:active{
+            transition: 0.1s;
+            font-size: 15px;
+            box-shadow: 0px 0px 11px 14px rgba(0,0,0,0.35) inset;
+            -webkit-box-shadow: 0px 0px 11px 14px rgba(0,0,0,0.35) inset;
+            -moz-box-shadow: 0px 0px 11px 14px rgba(0,0,0,0.35) inset;
+        
+        }
+    }
+}
+
+/*-----------------------------------------------------------------------------------------------------FIN FORMULARIO CONTACTO*/

@@ -1,0 +1,42 @@
+
+//Entidades reguladoras
+
+
+/*------------------------------------------------------------------------------------------------Entidades Reguladoras */
+.entidades{
+    display: flex;
+    background-color: map-get($FondoColorGeneral, FondoC);
+    padding-top: 30px;
+    text-align: center;
+    color: $color-titulofondoA;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    div{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        a{
+    
+            &:hover{
+            transition: 0.5s;
+            transform: scale(1.2);
+            }
+        }
+    }
+    
+}
+
+/*------------------------------------------------------------------------------------------------FIN Entidades Reguladoras */
+
+
+
+
+
+
+

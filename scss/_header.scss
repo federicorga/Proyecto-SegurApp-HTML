@@ -1,0 +1,125 @@
+
+
+//HEADER
+
+
+/*------------------------------------------------------------------------------------------------HEADER */
+
+
+
+
+header{ 
+
+   .myNav{    
+        padding: 0;
+
+        .myContenedorNav1{
+            
+            background-color: map-get($FondoColorGeneral, FondoA);
+
+            .myImgLogo{
+        
+                &:hover{transition: 0.5s;
+                    transform: scale(1.2);
+                }
+                &:active{transition: 0.2s;
+                    transform: scale(0.5);
+                }
+                
+            }
+    
+            //contenedor de navBar
+            .myContenedorNav{
+            
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                
+    
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-around;
+                    flex-wrap: wrap;
+                }
+            
+                //Ul lista de navBar
+                .myNavList{
+                    display: flex;
+                    
+    
+                    li{
+                    
+                        &:hover{
+                            scale: 1.1;
+                            transition: 0.5s;
+                            color: rgb(128, 193, 26) ;
+                            /* color: rgb(0, 147, 221) */
+                        }
+                    
+    
+                        a{
+                            font-family: $fuente-estiloB;
+                            color: $color-tituloheader;
+                            font-size: 1.4rem;
+                            display:flex;
+                            justify-self:center;
+                            
+                            
+                            
+                        
+                        }
+                    }
+                
+                }
+            
+    
+                //buscador
+    
+                .barraBusqueda{
+                    position: relative;
+                    flex-wrap: wrap;
+                    padding-top: 1rem;
+                    width: 73px;
+                    padding: 0.5rem;
+                    border-radius: 100px;
+                    
+    
+                    &:focus {
+                        width: 150px;
+                        -webkit-transition: width 0.4s ease-in-out;
+                        transition: width 0.4s ease-in-out;
+                        text-align: left;
+                    }
+    
+                }
+    
+                .botonBuscar{
+                    width: 5px;
+                    box-sizing: border-box;
+                    border: 3px solid #ccc;
+                    border-radius: 100px;
+                    background-color: white;
+                    background-image: url(../imagen/searchicon.png);
+                    background-position: 10px 6px;
+                    background-repeat: no-repeat;
+                    padding: 12px 20px 6px 20px;
+                }
+    
+                
+    
+                
+            }
+
+        }
+    }    
+    
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------FIN DE HEADER */

@@ -1,0 +1,223 @@
+
+
+//FOOTER
+
+
+/*------------------------------------------------------------------------------------------------FOOTER */
+
+
+
+footer{
+
+    display: flex;
+    grid-area: footer;
+    text-align: center;
+    background: map-get($FondoColorGeneral, FondoD);
+    flex-direction: column;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-top: 0.2rem;
+
+
+    .seccionFooterA{
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        align-items: stretch;
+        flex-direction: column;
+
+
+        //logo
+    
+
+        .logoSegundo{
+            display: flex;
+            text-align: left;
+            color: #bbbbbb;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 30vh;
+            align-items: stretch;
+
+            a{
+                text-align: center;
+                &:hover{
+                    transition: 0.5s;
+                    transform: scale(1.2);
+
+                }
+
+                &:active{
+                    transition: 0.2s;
+                    transform: scale(0.5);
+
+                }
+                img{
+
+                    text-align: center;
+                }
+            }
+            
+        
+            p{
+                
+                text-align: center;
+            }
+        }
+
+        //mapa de navegacion
+
+        nav{
+            .tituloMapSitio{
+                text-align: center;
+                color:$color-linksMenuMapa;
+                font-size: 1.4rem;
+                margin-bottom: 1rem;
+                font-weight: bold;
+                text-transform: uppercase;
+
+            }
+
+            .menuA {
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: row;
+                flex-wrap: wrap;
+                line-height: 1.7;
+
+            
+                li{
+
+                    list-style: none;
+                    a{
+                        color:$color-tituloMenuMap;
+                        text-decoration: none;
+                        line-height: 1.5;
+                        text-transform: uppercase;
+                        font-weight: bold;
+
+                        &:hover{
+                            transition: 0.5s;
+                            color: $color-linkshoverB;
+                        }
+                        
+                    }
+                
+
+                    .menu1{
+                        padding-left: 0;
+
+                        li{
+                            
+                            a{
+                                color: $color-linksMenuMapa;
+                                text-transform: initial;
+                                &:hover{
+                                    transition: 0.5s;
+                                    color: $color-linkshoverC;
+                                }
+                            }
+                            
+    
+
+                        }
+
+                    
+                    }
+                }
+                
+            }
+
+        }
+
+        //redes Sociales
+
+        .redesSociales{
+        
+            display: flex;
+            justify-content: flex-end;
+            
+            img{
+                cursor: pointer;
+            }
+            
+        }
+    
+    }
+
+    //desplazador ir arriba
+
+    .desplazador {
+        position: absolute;
+        display: flex;
+        cursor: pointer;
+        right: 1.2rem;
+        margin-top: 10px;
+        
+        a{
+            
+            text-decoration: none;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            position: absolute;
+            display: flex;
+            cursor: pointer;
+            right: 1.2rem;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 50px;
+            background: #0093ddb3;
+            align-content: stretch;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: wrap;
+            
+            &:hover{
+                transition: 0.5s;
+                transform: scale(1.1);
+            }
+
+            &:active{
+                transition: 0.2s;
+                transform: scale(0.8);
+                
+            }
+
+        }
+    }
+
+    //copyrigth
+
+    .copyRight{
+        background-color: #252422;
+        color: #a4a4a4;
+        text-align: center;
+        
+        
+    
+        div{
+            text-align: center;
+            padding-top: 1rem;
+
+            h4{
+                font-size: 1rem;
+            }
+        }
+    }
+    
+
+
+}
+
+// logo
+
+// Mapa
+
+// redes sociales
+
+//copyright
+
+//desplazador
+
+/*------------------------------------------------------------------------------------------------FIN DE FOOTER */

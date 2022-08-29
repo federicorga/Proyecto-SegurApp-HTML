@@ -1,0 +1,29 @@
+//Videos paginas
+
+
+
+/*------------------------------------------------------------------------------------------------Novedades Videos */
+.novedades{
+    background: map-get($FondoColorGeneral, FondoB);
+
+    h2{
+        color: $color-titulofondoB;
+        line-height: 1.5;
+        letter-spacing: 1px;
+        font-size: 2rem;
+        text-align: center;
+        
+    }
+
+    .novedadesVideos{
+        text-align: center;
+
+        h3{
+            @extend .titulosH3;
+        
+        }
+    
+    }
+}
+
+/*------------------------------------------------------------------------------------------------Fin Novedades Videos */

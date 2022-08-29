@@ -1,0 +1,428 @@
+
+//PRINCIPAL
+
+
+
+@import "variablesMapas";
+
+
+
+@import "mixinextend";
+
+@import "base";
+
+@import "header";
+
+@import "footer";
+
+@import"portadaPagSecundaria";
+
+@import "carrusel";
+
+@import "novedadesVideo";
+
+@import "entidadesReg";
+
+@import "formularioContacto";
+
+@import "condicional";
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------------------------------------------------------------------HTML Index */
+
+
+.linkAcceso{
+    
+    display: flex;
+    color: rgb(136, 136, 136);
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 1rem;
+    align-items: flex-start;
+    justify-content: space-between;
+    background: map-get($FondoColorGeneral, FondoB);
+    
+
+    div{
+
+        object-fit: contain;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 30%;
+        padding-bottom: 3rem;
+        a{ 
+            text-decoration: none;
+            list-style: none;
+            color:  rgb(62, 115, 115);
+
+            &:hover{
+                transition: 0.5s;
+                transform: scale(1.2);
+    
+            }
+    
+            &:active{
+                transition: 0.2s;
+                transform: scale(0.5);
+            }
+            img{
+                filter:  sepia(85%);
+                width: 5rem;
+                height: 6rem;
+                text-align: center;
+                padding-bottom: 1rem;
+
+                &:hover{
+                    transition: 0.5s;
+                    transform: scale(1.2);
+        
+                }
+        
+                &:active{
+                    transition: 0.2s;
+                    transform: scale(0.5);
+                }
+            }
+        }
+
+    
+
+        p{
+            height: auto;
+            width: 40%;
+            font-weight: bold;
+            font-size: 0.7rem;
+        }
+
+        h2{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #f5deb38a;
+        }
+        
+    }
+   
+}
+
+
+
+.clientes{
+    display: flex;
+    background-color: map-get($FondoColorGeneral, FondoC );
+    text-align: center;
+    color: $color-titulofondoA;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    h2{
+        margin-top: 2rem;
+    }
+    
+    img{
+    
+        text-align: center;
+        margin-top: 10px;
+        box-shadow: 1px 2px 34px 7px rgba(0,0,0,0.69);
+        -webkit-box-shadow: 1px 2px 34px 7px rgba(0,0,0,0.69);
+        -moz-box-shadow: 1px 2px 34px 7px rgba(0,0,0,0.69);
+        width: 95%;
+        height: 80%;
+       
+    }
+    
+   
+}
+
+
+
+
+
+/* -----------------------------------------------------------------------------------------FIN HTML Index */
+
+/* -------------------------------------------------------------------------------------------------------HTML Quienes somos */
+
+.quienSomos{
+        
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+
+    div{
+        h2{
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        p{
+
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 1.1rem;
+            max-width: 38rem;
+            margin: 1rem;
+
+            &::first-letter{
+                font-weight: bold;
+                font-size: 1.7rem;
+                display: flex;
+                
+            }
+        }
+    }
+
+    div{
+        img{
+
+            border-radius: 2rem;
+            margin-left: 20px;
+        }
+
+    }
+}
+
+
+
+.buttonC {
+    
+    padding-top: 60px;
+    display: block;
+    text-align: center;
+
+    a{
+        img{
+            &:hover{
+                transition: 0.5s;
+                filter: sepia(25%);
+                transform: scale(1.1);
+                
+            }
+            
+            &:active{
+                transition: 0.5s;
+                transform: scale(0.5);
+            }
+
+        }
+    }
+   
+}
+
+/* -------------------------------------------------------------------------------------------------------FIN HTML Quienes somos */
+
+/*--------------------------------------------------------------------------------------------- HTML Servicios*/
+
+
+
+.serviciosPag{
+    padding-top: 20px;
+    text-align: left;
+    padding-bottom: 40px;
+    background-image: linear-gradient(white, rgb(136, 136, 136) );
+
+    h2{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    
+
+}
+
+
+.seH{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.meD{
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+
+.card{
+    margin-bottom: 1rem;
+    padding-bottom: 16px;
+
+    img{
+        height: 50%;
+    }
+
+    .card-body{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+    
+}
+
+
+.publicidad{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(white, rgb(136, 136, 136) );
+    padding-top: 10px;
+
+    img{
+        width: auto;
+        height: auto;
+    }
+}
+
+
+
+
+/*---------------------------------------------------------------------------------------------FIN HTML Servicios*/
+
+/* -----------------------------------------------------------------------------------------HTML Legislacion */
+
+.normativasLegislacion{
+    display: flex;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    line-height: 2rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    nav{
+    
+        text-align: center;
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            
+            h2{
+                text-align: left;
+                padding-top: 20px;
+                
+                width: 15rem;
+            }
+
+            a{
+                font-family: $fuente-estiloA;
+                text-align: left;
+                padding-bottom: 20px;
+                padding-top: 20px;
+                text-decoration: none;
+                list-style: none;
+                color: black;
+            
+                &:hover{
+                    transition: 0.5s;
+                    color: $color-linkshoverA;
+                }
+            }
+            
+        }
+        
+    }
+}
+
+/* -----------------------------------------------------------------------------------------FIN HTML Legislacion */
+
+/* --------------------------------------------------------------------------------------------------HTML Contacto */
+
+.EmpresaContacto{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    div{
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+    
+    .infoEmpresa{
+
+        text-align: left;
+        display: flex;
+        width: 50%;
+        padding-top: 50px;
+        padding-right: 5px;
+
+        h2{
+            padding-bottom: 15px;
+        }
+        
+
+        p{
+
+            text-align: justify;
+        }
+
+        .datosEmpresa{
+            padding-top: 30px;
+
+            h3{
+    
+                padding: 5px;
+                text-transform: uppercase;
+                font-weight: normal;
+            }
+        }
+
+    }
+
+
+
+    .mapaGoogle{
+        text-align: center;
+        height: 20rem;
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+
+/* --------------------------------------------------------------------------------------------------FIN HTML Contacto */
+
+//MediaQuery (se recomienda al final)
+@import "mediaQuery";
+
+
+ 

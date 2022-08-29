@@ -1,0 +1,33 @@
+
+//importacion de reseteo y componentes
+@import"componentesAdd";
+@import"reseteo";
+
+
+
+/*----------------------------------------------------------------------------------Base*/
+html{
+    
+    scroll-behavior: smooth;
+    font-size: map-get($estilobase, fuenteTamañoBase);
+    
+    
+   
+
+}
+
+body{
+    background-image: linear-gradient(white, rgb(136, 136, 136) );
+    font-family: $fuente-estilobase;
+    color: map-get($estilobase, colorTextoBase ); 
+    font-size: 1rem;
+    
+    
+
+
+
+    
+        
+}
+
+/*----------------------------------------------------------------------------------fin Base*/
