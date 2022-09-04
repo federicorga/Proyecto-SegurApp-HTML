@@ -8,25 +8,33 @@
 
 @media (min-width:320px) and (max-width:1080px) and (min-height: 240px) {
 
-    header{
-        .navbar>.container-fluid{
+ header{
+   .myNav{
+        .myContenedorNav1{
             display: flex;
-            flex-wrap: wrap;
-            align-items: flex-start;
             flex-direction: column;
-            justify-content: space-between;
+            align-items: flex-start;
+
+            .botonHamburg{
+                margin-bottom: 10px;
+            }
 
             .myContenedorNav{
-                flex-direction: column;
+                flex-wrap: wrap;
                 align-items: flex-start;
-
-              
-
+                justify-content: flex-start;
+                flex-direction: column;
+                padding-bottom: 10px;
             }
+
         }
 
-            
     }
+    
+    }
+    
+    
+
 
     .linkAcceso{
         flex-direction: column;
@@ -40,6 +48,7 @@
     .quienSomos{
 
         div{
+            
             img{
                 margin-left: 0;
             }
@@ -47,7 +56,12 @@
         
         
     }
-
+    .infoContact{
+        
+        .EmpresaContacto{
+            justify-content: space-around;
+        }
+    }
     .formularioContacto{
         width: 25rem;
         form{
@@ -61,17 +75,36 @@
 
         
     }
+
+    .tituloPrincipal{
+        .shadown{
+
+            div{
+                align-items: center;
+            }
+
+        } 
+        
+    }
     
     
 }
 
 
 @media (max-width:320px) and (min-height: 240px){
-    header{
-        .formularioContacto{
-            width: 19rem;
+    
+
+    .infoContact{
+        
+        .EmpresaContacto{
+            justify-content: space-around;
         }
     }
+
+    .formularioContacto{
+        width: 19rem;
+    }
+    
     
 }
 

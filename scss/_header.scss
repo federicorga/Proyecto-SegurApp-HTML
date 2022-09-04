@@ -13,15 +13,20 @@ header{
 
         .myContenedorNav1{
             
-            background-color: map-get($FondoColorGeneral, FondoA);
+            background: map-get($FondoColorGeneral, FondoHed);
+            .campLogP{
+                padding: 0 ;
+                .myImgLogo{
 
-            .myImgLogo{
-        
-                &:hover{transition: 0.5s;
-                    transform: scale(1.2);
-                }
-                &:active{transition: 0.2s;
-                    transform: scale(0.5);
+                    height: 100px;
+                    
+            
+                    &:hover{transition: 0.5s;
+                        transform: scale(1.2);
+                    }
+                    &:active{transition: 0.2s;
+                        transform: scale(0.5);
+                    }
                 }
                 
             }
@@ -60,9 +65,10 @@ header{
                         a{
                             font-family: $fuente-estiloB;
                             color: $color-tituloheader;
-                            font-size: 1.4rem;
+                            font-size: 1rem;
                             display:flex;
                             justify-self:center;
+                            font-weight: bold;
 
                         }
                     }
@@ -76,9 +82,11 @@ header{
                     position: relative;
                     flex-wrap: wrap;
                     padding-top: 1rem;
-                    width: 73px;
+                    width: 90px;
                     padding: 0.5rem;
                     border-radius: 100px;
+                    color: #424242;
+                    background: linear-gradient(#b1b1b1, #f5f5f5);
                     
     
                     &:focus {
@@ -91,14 +99,16 @@ header{
                 }
     
                 .botonBuscar{
-                    width: 5px;
+                   
                     box-sizing: border-box;
-                    border: 3px solid #ccc;
-                    border-radius: 100px;
-                    background-color: white;
-                    background-image: url(../imagen/searchicon.png);
-                    background-position: 10px 6px;
+                    border: 2px solid #ccc;
+                    border-radius: 90px;
+                    
+                    background-image: url(../imagen/searchicon.webp);
+                    background-color: #123649;
+                    background-position: center;
                     background-repeat: no-repeat;
+                    background-size: contain;
                     padding: 12px 20px 6px 20px;
                 }
     

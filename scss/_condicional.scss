@@ -16,7 +16,7 @@ $esti: clasico;
            
             .myContenedorNav1{
                
-                background:url(../imagen/navidades.png),linear-gradient(#ff0000 50%, #c30000 50%);
+                background:url(../imagen/navidades.webp),linear-gradient(#ff0000 50%, #c30000 50%);
                 background-position: center;
                 background-repeat: no-repeat;
 
@@ -43,6 +43,36 @@ $esti: clasico;
             }
         }   
     }
+
+
+    .tituloPrincipal{
+
+        background-image: url(../imagen/navidadfondo.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 23rem;
+        display: flex;
+        padding: 0;
+    }
+
+
+    .tituloPagSecSegundo{
+        padding: 0;
+        
+        .tituloPaginaSecundaria{
+            background: url(../imagen/navidadfondo.webp) no-repeat fixed;
+          
+            justify-content: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            
+            
+        }
+    }
+
 
 
 }

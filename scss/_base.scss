@@ -10,6 +10,8 @@ html{
     
     scroll-behavior: smooth;
     font-size: map-get($estilobase, fuenteTamañoBase);
+    padding: 0;
+    margin: 0;
     
     
    
@@ -17,6 +19,8 @@ html{
 }
 
 body{
+    padding: 0;
+    margin: 0;
     background-image: linear-gradient(white, rgb(136, 136, 136) );
     font-family: $fuente-estilobase;
     color: map-get($estilobase, colorTextoBase ); 

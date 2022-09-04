@@ -41,7 +41,7 @@
 
 .liner{
 
-    @include subrayadoTitulo(#acb336, 150px, 2px,10px,0 );
+    @include subrayadoTitulo(#acb336, 150px, 2px,10px,10px );
     @include centrarObjeto();
 }
 

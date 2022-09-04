@@ -1,0 +1,30 @@
+Buenas tardes Luna, bueno como pidieron paso a hacer un resumen, es bastante extenso lo que hice así que pido perdón si me paso con en el texto jaja, 
+voy a tratar de poner todo lo que hice, pero no sé si me acuerde todo. 
+
+Antes de empezar quería agradecerte por la ayuda que nos das siempre, 
+tus aportes con los links y poder evacuar dudas fueron lo que permitió que hoy pudiera lograr llegar a este punto no tengo más que palabras de agradecimiento. ¡Gracias!
+
+Lo que realice:
+Básicamente hice modificaciones a todas las páginas, corregí errores ortográficos, 
+mejore el SEO y la accesibilidad de todas las páginas, agregue meta descripción, 
+restructure código, reacondicione el full responsive, agregue carrusel de boostrap (en la sección nuestros clientes) y por eso opte por dejar mi carrusel manual, 
+retoque links, modifique las imágenes (ahora son todos con formato webp), modifique la estética del a página, agregue un h1 en el index y puse animaciones nuevas, 
+cambie el logo, mejore el navbar para que se pueda posicionar como corresponde, mejore la sección de servicios y de quienes somos, 
+modifique el formulario de contacto para hacerlo mas simple. Lo de SCSS lo explico aparte.
+
+SCSS:
+EL SCSS _Principal es el que conecta todos los demás.
+
+También se creó:
+•	SCSS para Variables y Mapas.
+•	SCSS con Mixin y Extend.
+•	SCSS para componentes externos como fuentes y animaciones y cualquier link externo.
+
+•	SCSS base donde está el HTML y el body donde de ahí puedo modificar la estructura general de página.
+
+•	SCSS para Reseteo, que se conecta con el base.
+
+•	Varios SCSS para el header, para el footer, para los títulos principales de pagina principal y secundaria, para los carruseles y otros SCSS de secciones.
+
+•	SCSS para un condicional donde se debe modificar el valor para generar una pequeña estética navideña, sé que no era necesario, 
+	pero quería probarlo de esa forma, me pareció útil para tener en cuenta esta herramienta si se quiere generar una página con temáticas diferentes.

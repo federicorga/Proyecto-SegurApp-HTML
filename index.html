@@ -15,25 +15,28 @@
 
     <title>SegurAPP</title>
 
+    <meta name="description" content= "Consultora de Seguridad, Higiene y Medio Ambiente. Brindamos servicios de Seguridad e Higiene, somos expertos en Seguridad e Higiene. Soluciones integrales en prevención de riesgos del trabajo y protección del Medio Ambiente." >
+  
+
   </head>
 
   <body class="container-fluid">
 
     <header class="row">
 
-      <nav class="navbar navbar-expand-lg bg-light myNav">
+      <nav class="navbar navbar-dark navbar-expand-lg bg-dark myNav">
         <div class="container-fluid myContenedorNav1">
-          <a class="navbar-brand" href="index.html"><img class="myImgLogo" src="imagen/logochico.png" alt="logo" height="120"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <a class="navbar-brand campLogP" href="index.html"><img class="myImgLogo" src="imagen/logo-Segurapp.webp" alt="logo" height="120"/></a>
+          <button class="navbar-toggler collapsed botonHamburg" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="navbar-nav myContenedorNav" id="navbarSupportedContent">
-            <ul class="navbar-nav mb-lg-0 myNavList">
+          <div class="navbar-nav myContenedorNav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav myNavList">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="html/quienessomos.html">Quienes Somos</a>
+                <a class="nav-link" href="html/quienes-somos.html">Quiénes Somos</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="html/servicios.html">Servicios</a>
@@ -48,7 +51,7 @@
 
             <form class="d-flex" role="search">
               <input class="form-control me-2 barraBusqueda" type="search" placeholder="Buscar..." aria-label="Search">
-              <button class="btn btn-outline-success botonBuscar" type="submit"></button>
+              <button class="btn btn-outline-success botonBuscar" type="submit" aria-label="Boton de busqueda"></button>
             </form>
             
           </div>
@@ -60,7 +63,17 @@
     <main class="row">
       <!--Contenido Principal-->
 
+      <section class="tituloPrincipal animate__animated animate__fadeIn">
+        <div class="shadown">
+          <div>
+            <h1 class="animate__animated animate__fadeInDown">Consultora de Seguridad, Higiene y Medio Ambiente</h1>
+            <h2 class="animate__animated animate__fadeInDown">Servicios integrales a empresas.</h2>
+          </div>
+        </div>
+      </section>
+      
       <seccion class="seccionSlider">
+        
         <div class="contenedor-slider">
           <input type="radio" id="1" name="imagen-slider" hidden />
           <input type="radio" id="2" name="imagen-slider" hidden />
@@ -69,37 +82,44 @@
 
           <div class="slider" id="slider">
             <div class="slider__section">
-              <img class="imgSlider" src="imagen/slider2.png" alt="imagen 1" class="slider__img"/>
+              <img class="imgSlider"  src="imagen/slider2.webp" alt="imagen 1" class="slider__img"/>
+            
             </div>
 
             <div class="slider__section">
-              <img class="imgSlider" src="imagen/slider4.jpg" alt="imagen 2" class="slider__img"/>
+              <img class="imgSlider" src="imagen/slider4.webp" alt="imagen 2" class="slider__img"/>
+              
             </div>
 
             <div class="slider__section">
-              <img class="imgSlider" src="imagen/slider1.png" alt="imagen 3" class="slider__img"/>
+              <img class="imgSlider" src="imagen/slider1.webp" alt="imagen 3" class="slider__img"/>
+           
             </div>
 
             <div class="slider__section">
-              <img class="imgSlider" src="imagen/slider6.png" alt="imagen 4" class="slider__img"/>
+              <img class="imgSlider"  src="imagen/slider6.webp" alt="imagen 4" class="slider__img"/>
+
+            
             </div>
           </div>
 
+          
+
           <div class="paginacion">
             <label class="paginacion-item" for="1">
-              <img class="imgSlider" src="imagen/slider2.png" alt="imagen 1" />
+              <img class="imgSlider" src="imagen/slider2.webp" alt="imagen 1" />
             </label>
 
             <label class="paginacion-item" for="2">
-              <img class="imgSlider" src="imagen/slider4.jpg" alt="imagen 2" />
+              <img class="imgSlider" src="imagen/slider4.webp" alt="imagen 2" />
             </label>
 
             <label class="paginacion-item" for="3">
-              <img class="imgSlider" src="imagen/slider1.png" alt="imagen 3" />
+              <img class="imgSlider" src="imagen/slider1.webp" alt="imagen 3" />
             </label>
 
             <label class="paginacion-item" for="4">
-              <img class="imgSlider" src="imagen/slider6.png" alt="imagen 4" />
+              <img class="imgSlider" src="imagen/slider6.webp" alt="imagen 4" />
             </label>
           </div>
         </div>
@@ -109,12 +129,12 @@
         <!-- Seccion con links de acceso a la seccion de legislacion y servicios-->
         <div>
           <a href="html/servicios.html#seguridadehigiene">
-            <img src="imagen/iconoseguridad.png" alt="seguridad e higiene" height="100" lang="100"/>
+            <img src="imagen/iconoseguridad.webp" alt="seguridad e higiene" height="100" />
           </a>
           <h2>Seguridad e Higiene</h2>
           <p>
             Plan de Monitoreos, Evaluación de Vibraciones Humanas, Evaluación de
-            Estres Térmico, Estudios Ergonómicos.
+            Estés Térmico, Estudios Ergonómicos.
           </p>
 
           <a href="html/servicios.html#seguridadehigiene">ver mas</a>
@@ -122,7 +142,7 @@
 
         <div>
           <a href="html/servicios.html#medioambiente">
-            <img src="imagen/medioambienteico.png" alt="medio ambiente" height="100" lang="100"/>
+            <img src="imagen/medioambienteico.webp" alt="medio ambiente" height="100"/>
           </a>
 
           <h2>Medio Ambiente</h2>
@@ -137,7 +157,7 @@
 
         <div>
           <a href="html/legislacion.html">
-            <img src="imagen/legislacionicon.png" alt="legislacion" height="100" lang="100"/>
+            <img src="imagen/legislacionicon.webp" alt="legislacion" height="100" />
           </a>
           <h2>Legislación</h2>
           <p>
@@ -149,18 +169,40 @@
 
       </section>
      
-      <section class="clientes img-fluid max-width: 100%">
+      <section class="clientes">
         <!--Seccion de nuestros clientes-->
 
         <h2>Nuestros Clientes</h2>
+
         <div class="liner"></div>
-        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
-          <img src="imagen/Logos-varios1.jpg" alt="Empresas"/>
+
+        <div id="carouselCliente" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="imagen/clientes1.webp" class="d-block" alt="cliente1">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="imagen/clientes2.webp" class="d-block" alt="cliente2">
+            </div>
+            <div class="carousel-item" data-bs-interval="10000">
+              <img src="imagen/clientes3.webp" class="d-block" alt="cliente3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselCliente" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselCliente" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
       </section>
 
       <section id="novedades" class="novedades">
         <!--Seccion de novedades-->
+
+       
 
         <h2>NOVEDADES</h2>
         <div class="liner3"></div>
@@ -168,9 +210,9 @@
         <div class="row justify-content-center novedadesVideos">
           <div class="col-xl-6 col-md-6">
             <h3 class="text-wrap">
-              Rol de de Higiene y Seguridad en épocas de pandemia
+              Rol de Higiene y Seguridad en épocas de pandemia
             </h3>
-            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/cg8DokXyuw4"
+            <iframe title="rol de seg e hig" width="350rem" height="300rem" src="https://www.youtube.com/embed/cg8DokXyuw4"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
@@ -181,7 +223,7 @@
             <h3 class="text-wrap">
               Comisión de Igualdad de Oportunidades y de Trato
             </h3>
-            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/XXQjrA2Rl-0"
+            <iframe title="igualdad oportunidades" width="350rem" height="300rem" src="https://www.youtube.com/embed/XXQjrA2Rl-0"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
@@ -199,7 +241,7 @@
 
           <div class="col-xl-6 col-md-6">
             <h3 class="text-wrap">Subsecretaria de Planificación Ambiental</h3>
-            <iframe width="350rem" height="300rem" src="https://www.youtube.com/embed/QM_GYSLv6wQ" 
+            <iframe title="subsecretaria de planificacion" width="350rem" height="300rem" src="https://www.youtube.com/embed/QM_GYSLv6wQ" 
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen>
@@ -214,16 +256,16 @@
         <div class="liner"></div>
         <div id="entidadesreg">
           <a href="https://www.iso.org/" target="_blank">
-            <img src="imagen/iso-icon.png" alt="Normas ISO" width="150" lang="150"/>
+            <img src="imagen/iso-icon.webp" alt="Normas ISO" width="150" />
           </a>
           <a href="https://www.ambiente.gba.gob.ar/" target="_blank">
-            <img src="imagen/opdslog.jpg" alt="Normas ISO" width="150" lang="150"/>
+            <img src="imagen/opdslog.webp" alt="Normas ISO" width="150" />
           </a>
           <a href="https://www.argentina.gob.ar/srt" target="_blank">
-            <img src="imagen/SRTlog.jpg" alt="Normas ISO" width="150" lang="150"/>
+            <img src="imagen/SRTlog.webp" alt="Normas ISO" width="150" />
           </a>
           <a href="https://iram.org.ar/" target="_blank">
-            <img src="imagen/iramlogo.png" alt="Normas ISO" width="150" lang="150"/>
+            <img src="imagen/iramlogo.webp" alt="Normas ISO" width="150" />
           </a>
         </div>
       </section>
@@ -238,7 +280,7 @@
           <div id="logotitulofooter" class="logoSegundo">
             <!--Logo + Titulo para el footer-->
             <a href="index.html">
-              <img src="imagen/logochico.png" alt="logoprincipal" height="150" lang=""/>
+              <img src="imagen/logo-Segurapp3.webp" alt="logoprincipal" height="150"/>
             </a>
             <p>Consultora de Seguridad, Higiene y Medio ambiente</p>
           </div>
@@ -283,19 +325,19 @@
 
           <div id="iconpoketredsocial" class="redesSociales">
             <!--Acceso a Redes Sociales-->
-            <img src="imagen/iconosredes.png" alt="redes sociales" height="50" lang="50"/>
+            <img src="imagen/iconosredes.webp" alt="redes sociales" height="50" />
           </div>
         </section>
       </section>
 
       <div id="desplazador" class="desplazador" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
         <!--boton que desplaza al encabezado de la pagina-->
-        <a href="#"><img src="imagen/flechaup.png" alt="flechaup"/></a>
+        <a href="#" aria-label="Boton up"><img src="imagen/flechaup.webp" alt="flechaup"/></a>
       </div>
       <section class="copyRight">
         <div id="leyendacopyright">
           <!-- leyenda de copyright-->
-          <h4>Copyright © 2022 - SegurApp Argentina. Todos los derechos reservados</h4>
+          <h3>Copyright © 2022 - SegurApp Argentina. Todos los derechos reservados</h3>
         </div>
       </section>
     </footer>

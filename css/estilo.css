@@ -12,7 +12,7 @@
   width: 150px;
   height: 2px;
   margin-top: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-left: auto;
   margin-right: auto; }
 
@@ -43,9 +43,13 @@
 /*----------------------------------------------------------------------------------Base*/
 html {
   scroll-behavior: smooth;
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 0;
+  margin: 0; }
 
 body {
+  padding: 0;
+  margin: 0;
   background-image: linear-gradient(white, #888888);
   font-family: "Lato", sans-serif;
   color: #333;
@@ -56,13 +60,17 @@ body {
 header .myNav {
   padding: 0; }
   header .myNav .myContenedorNav1 {
-    background-color: white; }
-    header .myNav .myContenedorNav1 .myImgLogo:hover {
-      transition: 0.5s;
-      transform: scale(1.2); }
-    header .myNav .myContenedorNav1 .myImgLogo:active {
-      transition: 0.2s;
-      transform: scale(0.5); }
+    background: linear-gradient(#252525, #353535); }
+    header .myNav .myContenedorNav1 .campLogP {
+      padding: 0; }
+      header .myNav .myContenedorNav1 .campLogP .myImgLogo {
+        height: 100px; }
+        header .myNav .myContenedorNav1 .campLogP .myImgLogo:hover {
+          transition: 0.5s;
+          transform: scale(1.2); }
+        header .myNav .myContenedorNav1 .campLogP .myImgLogo:active {
+          transition: 0.2s;
+          transform: scale(0.5); }
     header .myNav .myContenedorNav1 .myContenedorNav {
       flex-direction: row;
       align-items: center;
@@ -82,31 +90,34 @@ header .myNav {
           color: #80c11a; }
         header .myNav .myContenedorNav1 .myContenedorNav .myNavList li a {
           font-family: "Lato", sans-serif;
-          color: #acb336;
-          font-size: 1.4rem;
+          color: #a7a7a7;
+          font-size: 1rem;
           display: flex;
-          justify-self: center; }
+          justify-self: center;
+          font-weight: bold; }
       header .myNav .myContenedorNav1 .myContenedorNav .barraBusqueda {
         position: relative;
         flex-wrap: wrap;
         padding-top: 1rem;
-        width: 73px;
+        width: 90px;
         padding: 0.5rem;
-        border-radius: 100px; }
+        border-radius: 100px;
+        color: #424242;
+        background: linear-gradient(#b1b1b1, #f5f5f5); }
         header .myNav .myContenedorNav1 .myContenedorNav .barraBusqueda:focus {
           width: 150px;
           -webkit-transition: width 0.4s ease-in-out;
           transition: width 0.4s ease-in-out;
           text-align: left; }
       header .myNav .myContenedorNav1 .myContenedorNav .botonBuscar {
-        width: 5px;
         box-sizing: border-box;
-        border: 3px solid #ccc;
-        border-radius: 100px;
-        background-color: white;
-        background-image: url(../imagen/searchicon.png);
-        background-position: 10px 6px;
+        border: 2px solid #ccc;
+        border-radius: 90px;
+        background-image: url(../imagen/searchicon.webp);
+        background-color: #123649;
+        background-position: center;
         background-repeat: no-repeat;
+        background-size: contain;
         padding: 12px 20px 6px 20px; }
 
 /*------------------------------------------------------------------------------------------------FIN DE HEADER */
@@ -219,40 +230,87 @@ footer {
     footer .copyRight div {
       text-align: center;
       padding-top: 1rem; }
-      footer .copyRight div h4 {
+      footer .copyRight div h3 {
         font-size: 1rem; }
 
 /*------------------------------------------------------------------------------------------------FIN DE FOOTER */
-/*----------------------------------------------------------------------------------Portada paginas Secundarias*/
-.tituloPaginaSecundaria {
-  background: url(../imagen/HomeLOMBARDI-31.jpg) no-repeat fixed;
-  height: 18rem;
-  justify-content: center;
-  top: 0;
-  background-position-x: 50%;
-  background-position-y: 0; }
-  .tituloPaginaSecundaria h1 {
-    padding-top: 7rem;
-    height: auto;
-    margin: auto;
-    padding: auto;
-    display: inline-bloc;
-    text-align: center;
-    text-transform: uppercase;
-    color: #fff;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.6rem;
-    text-shadow: 1px 1px #333, -1px 1px #333, 1px -1px #333, -1px -1px #333; }
-  .tituloPaginaSecundaria .animate__animated.animate__fadeIn {
-    --animate-duration: 5s; }
+/*----------------------------------------------------------------------------------Portada paginas*/
+.tituloPrincipal {
+  background-image: url(../imagen/mantenimiento-naves-banner.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 23rem;
+  display: flex;
+  padding: 0; }
+  .tituloPrincipal .shadown {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%; }
+    .tituloPrincipal .shadown div {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      height: 100%;
+      align-items: flex-start; }
+      .tituloPrincipal .shadown div h1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        font-size: 2rem;
+        color: #fff;
+        text-shadow: 1px 1px #333, -1px 1px #333, 1px -1px #333, -1px -1px #333;
+        text-align: center;
+        width: 50%;
+        text-transform: uppercase;
+        font-style: "Lato", sans-serif; }
+      .tituloPrincipal .shadown div .animate__animated.animate__fadeIn {
+        --animate-duration: 5s; }
+      .tituloPrincipal .shadown div h2 {
+        display: flex;
+        flex-wrap: wrap;
+        color: #c4c4c4;
+        text-shadow: 1px 1px #333, -1px 1px #333, 1px -1px #333, -1px -1px #333;
+        font-size: 1.9rem;
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+        align-items: center; }
+      .tituloPrincipal .shadown div .animate__animated.animate__fadeInDown {
+        --animate-duration: 2.1s; }
 
-/*----------------------------------------------------------------------------------FIN Portada paginas Secundarias*/
+.tituloPagSecSegundo {
+  padding: 0; }
+  .tituloPagSecSegundo .tituloPaginaSecundaria {
+    background: url(../imagen/HomeLOMBARDI-31.webp) no-repeat fixed;
+    height: 18rem;
+    justify-content: center;
+    top: 0;
+    background-position-x: 50%;
+    background-position-y: 0; }
+    .tituloPagSecSegundo .tituloPaginaSecundaria h1 {
+      padding-top: 7rem;
+      height: auto;
+      margin: auto;
+      padding: auto;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.6rem;
+      text-shadow: 1px 1px #333, -1px 1px #333, 1px -1px #333, -1px -1px #333; }
+    .tituloPagSecSegundo .tituloPaginaSecundaria .animate__animated.animate__fadeIn {
+      --animate-duration: 5s; }
+
+/*----------------------------------------------------------------------------------FIN Portada paginas*/
 /*------------------------------------------------------------------------------------------------SLIDER */
 .seccionSlider {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   background: linear-gradient(white, #888888);
   background-image: linear-gradient(white, #888888);
   box-shadow: 1px 2px 22px 5px rgba(0, 0, 0, 0.69) inset;
@@ -265,6 +323,24 @@ footer {
     border-radius: 6px;
     overflow: hidden;
     margin-bottom: 10px; }
+    .seccionSlider .contenedor-slider .slider__btn {
+      position: absolute;
+      width: 40px;
+      background-color: rgba(255, 255, 255, 0.7);
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 30px;
+      font-weight: bold;
+      font-family: monospace;
+      text-align: center;
+      border-radius: 50%;
+      cursor: pointer; }
+      .seccionSlider .contenedor-slider .slider__btn:hover {
+        background: #fff; }
+    .seccionSlider .contenedor-slider .slider__btn--left {
+      left: 10px; }
+    .seccionSlider .contenedor-slider .slider__btn--right {
+      right: 10px; }
     .seccionSlider .contenedor-slider .slider {
       display: flex;
       transform: translate3d(0, 0, 0);
@@ -286,7 +362,11 @@ footer {
           width: 100%;
           margin-left: 0;
           margin-right: 0;
-          margin-top: 1rem; }
+          margin-top: 1rem;
+          transition: all 300ms; }
+        .seccionSlider .contenedor-slider .slider .slider__section a {
+          text-decoration: none;
+          font-style: none; }
     .seccionSlider .contenedor-slider .paginacion {
       position: absolute;
       bottom: 20px;
@@ -319,7 +399,8 @@ footer {
           width: 100%;
           transform: scale(1);
           opacity: 0;
-          transition: all 300ms; }
+          transition: all 300ms;
+          object-fit: contain; }
           .seccionSlider .contenedor-slider .paginacion .paginacion-item img:hover {
             opacity: 1;
             transform: scale(1); }
@@ -365,15 +446,19 @@ footer {
 /*------------------------------------------------------------------------------------------------FIN SLIDER*/
 /*------------------------------------------------------------------------------------------------Novedades Videos */
 .novedades {
-  background: linear-gradient(0deg, #403d39, #3a3734); }
+  background: linear-gradient(0deg, #1e1e1e, #3a3734); }
   .novedades h2 {
     color: wheat;
     line-height: 1.5;
     letter-spacing: 1px;
     font-size: 2rem;
-    text-align: center; }
+    text-align: center;
+    padding-top: 16px; }
   .novedades .novedadesVideos {
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 10px; }
+    .novedades .novedadesVideos iframe {
+      border-radius: 50px; }
 
 /*------------------------------------------------------------------------------------------------Fin Novedades Videos */
 /*------------------------------------------------------------------------------------------------Entidades Reguladoras */
@@ -425,7 +510,6 @@ footer {
       margin-bottom: 20px; }
   .formularioContacto label {
     display: flex;
-    max-width: 100%;
     margin-bottom: 5px;
     font-weight: 700;
     text-align: left;
@@ -496,7 +580,7 @@ footer {
   padding-top: 1rem;
   align-items: flex-start;
   justify-content: space-between;
-  background: linear-gradient(0deg, #403d39, #3a3734); }
+  background: linear-gradient(0deg, #1e1e1e, #3a3734); }
   .linkAcceso div {
     object-fit: contain;
     display: flex;
@@ -528,75 +612,81 @@ footer {
           transform: scale(0.5); }
     .linkAcceso div p {
       height: auto;
-      width: 40%;
+      width: 50%;
       font-weight: bold;
-      font-size: 0.7rem; }
+      font-size: 0.9rem; }
     .linkAcceso div h2 {
       font-size: 1.2rem;
       text-transform: uppercase;
       color: #f5deb38a; }
 
 .clientes {
-  display: flex;
   background-color: white;
   text-align: center;
-  color: black;
-  font-size: 30px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  flex-direction: column;
-  flex-wrap: wrap;
   text-transform: uppercase;
-  align-items: center;
-  padding-bottom: 2rem; }
+  height: 240px; }
   .clientes h2 {
-    margin-top: 2rem; }
-  .clientes img {
-    text-align: center;
-    margin-top: 10px;
-    box-shadow: 1px 2px 34px 7px rgba(0, 0, 0, 0.69);
-    -webkit-box-shadow: 1px 2px 34px 7px rgba(0, 0, 0, 0.69);
-    -moz-box-shadow: 1px 2px 34px 7px rgba(0, 0, 0, 0.69);
-    width: 95%;
-    height: 80%; }
+    color: black;
+    margin-top: 2rem;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 1.5; }
+  .clientes .carousel-inner {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px; }
+    .clientes .carousel-inner .carousel-item img {
+      width: 100%;
+      height: 100%;
+      background-size: cover; }
 
 /* -----------------------------------------------------------------------------------------FIN HTML Index */
 /* -------------------------------------------------------------------------------------------------------HTML Quienes somos */
-.quienSomos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding-top: 5rem; }
-  .quienSomos div h2 {
-    padding-bottom: 20px;
+.seccionQuienesSomos {
+  background-image: linear-gradient(white, #888888); }
+  .seccionQuienesSomos .quienSomos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5rem; }
+    .seccionQuienesSomos .quienSomos div {
+      padding-left: 1rem; }
+      .seccionQuienesSomos .quienSomos div h2 {
+        padding-bottom: 20px;
+        text-align: center; }
+      .seccionQuienesSomos .quienSomos div blockquote {
+        border-left: 5px solid #c00505;
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        max-width: 38rem;
+        padding-left: 1rem;
+        margin: 0 1rem 0 0; }
+        .seccionQuienesSomos .quienSomos div blockquote::first-letter {
+          font-weight: bold;
+          font-size: 1.7rem;
+          display: flex; }
+      .seccionQuienesSomos .quienSomos div p {
+        text-align: justify;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        max-width: 38rem;
+        margin: 1rem; }
+    .seccionQuienesSomos .quienSomos div img {
+      border-radius: 2rem; }
+  .seccionQuienesSomos .buttonC {
+    padding-top: 60px;
+    display: block;
     text-align: center; }
-  .quienSomos div p {
-    text-align: justify;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    max-width: 38rem;
-    margin: 1rem; }
-    .quienSomos div p::first-letter {
-      font-weight: bold;
-      font-size: 1.7rem;
-      display: flex; }
-  .quienSomos div img {
-    border-radius: 2rem;
-    margin-left: 20px; }
-
-.buttonC {
-  padding-top: 60px;
-  display: block;
-  text-align: center; }
-  .buttonC a img:hover {
-    transition: 0.5s;
-    filter: sepia(25%);
-    transform: scale(1.1); }
-  .buttonC a img:active {
-    transition: 0.5s;
-    transform: scale(0.5); }
+    .seccionQuienesSomos .buttonC a img:hover {
+      transition: 0.5s;
+      filter: sepia(25%);
+      transform: scale(1.1); }
+    .seccionQuienesSomos .buttonC a img:active {
+      transition: 0.5s;
+      transform: scale(0.5); }
 
 /* -------------------------------------------------------------------------------------------------------FIN HTML Quienes somos */
 /*--------------------------------------------------------------------------------------------- HTML Servicios*/
@@ -622,14 +712,25 @@ footer {
 
 .card {
   margin-bottom: 1rem;
-  padding-bottom: 16px; }
+  padding-bottom: 16px;
+  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.75);
+  margin-top: 20px;
+  background: #2c2c2ced; }
   .card img {
-    height: 50%; }
+    height: 210px;
+    width: 100%; }
   .card .card-body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly; }
+    .card .card-body h3 {
+      color: #cdcdcd;
+      font-weight: 700; }
+    .card .card-body .card-text {
+      color: #b5b5b5; }
 
 .publicidad {
   display: flex;
@@ -666,67 +767,73 @@ footer {
         text-align: left;
         padding-top: 20px;
         width: 15rem; }
-      .normativasLegislacion nav div a {
-        font-family: 400 0.875rem/1.75rem "Roboto", sans-serif;
-        text-align: left;
-        padding-bottom: 20px;
-        padding-top: 20px;
+      .normativasLegislacion nav div ul li {
         text-decoration: none;
         list-style: none;
-        color: black; }
-        .normativasLegislacion nav div a:hover {
-          transition: 0.5s;
-          color: #0093dd; }
+        text-align: left; }
+        .normativasLegislacion nav div ul li a {
+          font-family: 400 0.875rem/1.75rem "Roboto", sans-serif;
+          padding-bottom: 20px;
+          padding-top: 20px;
+          text-decoration: none;
+          list-style: none;
+          color: black; }
+          .normativasLegislacion nav div ul li a:hover {
+            transition: 0.5s;
+            color: #0093dd; }
 
 /* -----------------------------------------------------------------------------------------FIN HTML Legislacion */
 /* --------------------------------------------------------------------------------------------------HTML Contacto */
-.EmpresaContacto {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  margin-top: 20px;
-  padding-bottom: 40px;
-  flex-wrap: wrap;
-  justify-content: space-around; }
-  .EmpresaContacto div {
+.infoContact {
+  height: 50%; }
+  .infoContact .EmpresaContacto {
     display: flex;
-    align-content: center;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: flex-start; }
-  .EmpresaContacto .infoEmpresa {
-    text-align: left;
-    display: flex;
-    width: 50%;
-    padding-top: 50px;
-    padding-right: 5px; }
-    .EmpresaContacto .infoEmpresa h2 {
-      padding-bottom: 15px; }
-    .EmpresaContacto .infoEmpresa p {
-      text-align: justify; }
-    .EmpresaContacto .infoEmpresa .datosEmpresa {
-      padding-top: 30px; }
-      .EmpresaContacto .infoEmpresa .datosEmpresa h3 {
-        padding: 5px;
-        text-transform: uppercase;
-        font-weight: normal; }
-  .EmpresaContacto .mapaGoogle {
+    flex-direction: row;
     text-align: center;
-    height: 20rem;
-    width: 100%; }
+    margin-top: 20px;
+    padding-bottom: 40px;
+    flex-wrap: wrap; }
+    .infoContact .EmpresaContacto div {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: flex-start; }
+    .infoContact .EmpresaContacto .infoEmpresa {
+      text-align: left;
+      display: flex;
+      width: 50%;
+      padding-top: 50px;
+      padding-right: 5px; }
+      .infoContact .EmpresaContacto .infoEmpresa h2 {
+        padding-bottom: 15px;
+        font-weight: bold; }
+      .infoContact .EmpresaContacto .infoEmpresa .datosEmpresa {
+        padding-top: 30px; }
+        .infoContact .EmpresaContacto .infoEmpresa .datosEmpresa h3 {
+          font-size: 1.3rem;
+          padding: 5px;
+          font-weight: normal; }
+    .infoContact .EmpresaContacto .mapaGoogle {
+      text-align: center;
+      height: 20rem;
+      width: 100%; }
 
 /* --------------------------------------------------------------------------------------------------FIN HTML Contacto */
 /*-----------------------------------------------------------------------------------------------------MEDIA QUERY*/
 @media (min-width: 320px) and (max-width: 1080px) and (min-height: 240px) {
-  header .navbar > .container-fluid {
+  header .myNav .myContenedorNav1 {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
     flex-direction: column;
-    justify-content: space-between; }
-    header .navbar > .container-fluid .myContenedorNav {
+    align-items: flex-start; }
+    header .myNav .myContenedorNav1 .botonHamburg {
+      margin-bottom: 10px; }
+    header .myNav .myContenedorNav1 .myContenedorNav {
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: flex-start;
       flex-direction: column;
-      align-items: flex-start; }
+      padding-bottom: 10px; }
   .linkAcceso {
     flex-direction: column;
     align-items: center; }
@@ -734,6 +841,8 @@ footer {
       width: 100%; }
   .quienSomos div img {
     margin-left: 0; }
+  .infoContact .EmpresaContacto {
+    justify-content: space-around; }
   .formularioContacto {
     width: 25rem; }
     .formularioContacto form {
@@ -741,10 +850,14 @@ footer {
       padding-left: 5px;
       padding-right: 5px; }
       .formularioContacto form .buttonContact {
-        width: 100%; } }
+        width: 100%; }
+  .tituloPrincipal .shadown div {
+    align-items: center; } }
 
 @media (max-width: 320px) and (min-height: 240px) {
-  header .formularioContacto {
+  .infoContact .EmpresaContacto {
+    justify-content: space-around; }
+  .formularioContacto {
     width: 19rem; } }
 
 /*-----------------------------------------------------------------------------------------------------FIN MEDIA QUERY*/

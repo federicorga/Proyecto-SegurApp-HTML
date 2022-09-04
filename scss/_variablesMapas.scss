@@ -6,7 +6,7 @@
 
 //------------------------------------------------------------------------------------------------Variables
 
-
+//De aqui se puede gestionar los  el estilo de la pagina.
 
 $fuente-estilobase: 'Lato', sans-serif;
 
@@ -14,9 +14,9 @@ $fuente-estiloA: 400 0.875rem/1.75rem "Roboto", sans-serif;
 
 $fuente-estiloB: 'Lato', sans-serif;
 
-$color-tituloSecundarioh1: #fff;
+$color-tituloh1: #fff;
 
-$color-tituloheader:#acb336;
+$color-tituloheader: #a7a7a7;
 
 $color-linkshoverA: rgb(0, 147, 221);
 
@@ -39,7 +39,10 @@ $color-titulofondoA:black;
 
 $estilobase: (colorTextoBase: #333, fuenteTamañoBase: 16px );
 
-$FondoColorGeneral: (FondoA:rgb(255, 255, 255), FondoB:linear-gradient(0deg, #403d39, rgb(58, 55, 52)), FondoC:white,
-FondoD: linear-gradient(to right top, rgb(11, 31, 42), rgb(68, 100, 148)) rgb(11, 31, 42) );
+$FondoColorGeneral: (FondoA:rgb(255, 255, 255), FondoB:linear-gradient(0deg, #1e1e1e, #3a3734), FondoC:white,
+FondoD: linear-gradient(to right top, rgb(11, 31, 42), rgb(68, 100, 148)) rgb(11, 31, 42),
+FondoHed:linear-gradient(#252525, #353535));
 
 //------------------------------------------------------------------------------------------------FIN MAPAS
+
+
