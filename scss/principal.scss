@@ -28,6 +28,8 @@
 
 @import "condicional";
 
+@import "construccion";
+
 
 
 
@@ -58,9 +60,10 @@
 
         object-fit: contain;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        width: 30%;
+        width: 100%;
         padding-bottom: 3rem;
         a{ 
             text-decoration: none;
@@ -101,7 +104,7 @@
 
         p{
             height: auto;
-            width: 50%;
+            
             font-weight: bold;
             font-size: 0.9rem;
         }
@@ -154,6 +157,8 @@
         }
         
 
+
+
         
     }
   
@@ -189,9 +194,10 @@
         div{
            padding-left: 1rem;
             h2{
-                padding-bottom: 20px;
+                margin-bottom: 50px;
                 text-align: center;
             }
+
             blockquote{
                 border-left: 5px solid rgb(192, 5, 5);
 
@@ -237,6 +243,7 @@
         }
     }
 
+    
 
 
     .buttonC {
@@ -344,8 +351,9 @@
     padding-top: 10px;
 
     img{
-        width: auto;
-        height: auto;
+        width: 40%;
+        height: 100%;
+        padding-bottom: 10px;
     }
 }
 
@@ -421,47 +429,39 @@
 /* --------------------------------------------------------------------------------------------------HTML Contacto */
 
 .infoContact{
-    height: 50%;
+    background-image: linear-gradient(white, #888888);
+    padding: 0;
+    
     .EmpresaContacto{
-        display: flex;
-        flex-direction: row;
-        text-align: center;
-        margin-top: 20px;
-        padding-bottom: 40px;
-        flex-wrap: wrap;
-      
+   
 
-        div{
-            display: flex;
-            align-content: center;
-            flex-direction: column;
-            flex-wrap: wrap;
-            align-items: flex-start;
-        }
         
         .infoEmpresa{
-
-            text-align: left;
+            width: 100%;
             display: flex;
-            width: 50%;
-            padding-top: 50px;
-            padding-right: 5px;
+            flex-direction: column;
+            align-items: center;
+
+            
+
+          
 
             h2{
-                padding-bottom: 15px;
                 font-weight: bold;
+                margin-top: 20px;
+                font-size: 1.8rem;
+               
             }
             
 
          
             .datosEmpresa{
-                padding-top: 30px;
+            margin-top: 20px;
+             margin-bottom: 30px;
 
                 h3{
-                    font-size: 1.3rem;
-                    padding: 5px;
+                    font-size: 1.4rem;
                     
-                    font-weight: normal;
                 }
             }
 
@@ -470,9 +470,10 @@
 
 
         .mapaGoogle{
-            text-align: center;
-            height: 20rem;
-            width: 100%;
+           
+            width: 90%;
+            height: 15rem
+           
         }
 
 
@@ -484,6 +485,9 @@
 
 
 /* --------------------------------------------------------------------------------------------------FIN HTML Contacto */
+
+
+
 
 //MediaQuery (se recomienda al final)
 @import "mediaQuery";

@@ -31,19 +31,12 @@
 
     }
     
-    }
     
     
+    
 
 
-    .linkAcceso{
-        flex-direction: column;
-        align-items: center;
-
-        div{
-            width: 100%;
-        }
-    }
+ 
 
     .quienSomos{
 
@@ -56,22 +49,7 @@
         
         
     }
-    .infoContact{
-        
-        .EmpresaContacto{
-            justify-content: space-around;
-        }
-    }
-    .formularioContacto{
-        width: 25rem;
-        form{
-            width: 100%;
-            padding-left: 5px;
-            padding-right: 5px;
-            .buttonContact {
-                width: 100%;
-            }
-        }
+
 
         
     }
@@ -87,25 +65,24 @@
         
     }
     
-    
-}
 
 
-@media (max-width:320px) and (min-height: 240px){
-    
-
-    .infoContact{
+    .clientes .carousel-inner {
+        padding: 30px;
+        width: 85%;
         
-        .EmpresaContacto{
-            justify-content: space-around;
-        }
     }
 
-    .formularioContacto{
-        width: 19rem;
+    .carousel-control-next-icon{
+        padding: 1rem;
+    }
+
+    .carousel-control-prev-icon{
+        padding: 1rem;
     }
     
-    
+
+
 }
 
 

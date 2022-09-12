@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(animate.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap");
@@ -458,7 +459,9 @@ footer {
     text-align: center;
     padding-bottom: 10px; }
     .novedades .novedadesVideos iframe {
-      border-radius: 50px; }
+      border-radius: 50px;
+      height: 20rem;
+      width: 80%; }
 
 /*------------------------------------------------------------------------------------------------Fin Novedades Videos */
 /*------------------------------------------------------------------------------------------------Entidades Reguladoras */
@@ -485,53 +488,43 @@ footer {
 /*------------------------------------------------------------------------------------------------FIN Entidades Reguladoras */
 /*-----------------------------------------------------------------------------------------------------FORMULARIO CONTACTO*/
 .formularioContacto {
-  width: 25rem;
-  padding-bottom: 14px;
-  border-radius: 1rem;
-  margin-top: 5px;
-  box-shadow: -2px 2px 13px 4px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: -2px 2px 13px 4px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: -2px 2px 13px 4px rgba(0, 0, 0, 0.75); }
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imagen/contactfond.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center; }
   .formularioContacto form {
-    padding-top: 1rem;
-    text-align: left;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    border-radius: 10px; }
+    border: 2px solid #4f4e4e;
+    border-radius: 20px;
+    background: #0a0a0a66;
+    padding: 4px;
+    margin-bottom: 20px;
+    margin-top: 20px; }
+    .formularioContacto form ::placeholder {
+      color: #adadad; }
     .formularioContacto form h2 {
-      border-bottom: 3px solid #36bcdd;
-      padding-bottom: 1rem;
+      color: white;
       text-align: center;
-      margin-left: 50px;
-      margin-right: 50px;
-      text-transform: uppercase;
       font-weight: bold;
-      margin-bottom: 20px; }
+      text-transform: uppercase; }
   .formularioContacto label {
-    display: flex;
-    margin-bottom: 5px;
-    font-weight: 700;
-    text-align: left;
-    flex-direction: column;
-    flex-wrap: wrap; }
+    color: white;
+    margin-bottom: 4px;
+    margin-top: 4px; }
   .formularioContacto input {
-    display: flex;
-    border: none;
-    background: none;
-    border-bottom: 2px solid #36bcdd;
-    text-align: left;
-    height: 50px;
-    width: 100%;
-    margin-bottom: 16px;
-    outline: none; }
+    color: wheat;
+    background-color: #3a3a3a;
+    border: 0; }
   .formularioContacto textarea {
-    border: 1px solid #36bcdd;
-    border-radius: 0.6rem;
-    outline: none;
-    width: 100%;
-    color: #000000;
-    font-family: 400 0.875rem/1.75rem "Roboto", sans-serif; }
+    color: wheat;
+    background-color: #3a3a3a;
+    border: 0; }
 
 .buttonContact {
   display: flex;
@@ -541,15 +534,12 @@ footer {
     display: flex;
     font-family: 400 0.875rem/1.75rem "Roboto", sans-serif;
     width: 160px;
-    color: white;
+    color: black;
     text-align: center;
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
-    /* background: #032cb3; */
-    /* background: radial-gradient(ellipse farthest-corner at center center, #003372 0%, rgba(25, 110, 163, 0.73) 80%); */
-    background: -webkit-radial-gradient(ellipse farthest-corner at center center, #002e72 0%, rgba(25, 64, 163, 0.73) 80%);
-    background: -moz-radial-gradient(ellipse farthest-corner at center center, #003172 0%, rgba(25, 94, 163, 0.73) 80%);
+    background-color: white;
     border-radius: 88px 88px 88px 88px;
     -webkit-border-radius: 88px 88px 88px 88px;
     -moz-border-radius: 88px 88px 88px 88px;
@@ -570,6 +560,16 @@ footer {
       -moz-box-shadow: 0px 0px 11px 14px rgba(0, 0, 0, 0.35) inset; }
 
 /*-----------------------------------------------------------------------------------------------------FIN FORMULARIO CONTACTO*/
+/*------------------------------------------------------------------------------------------------Pag Construcción */
+.construccionImg {
+  padding: 0;
+  align-items: center;
+  text-align: center; }
+  .construccionImg img {
+    width: 70%;
+    align-items: center; }
+
+/*------------------------------------------------------------------------------------------------Fin Pag Construcción */
 /* -----------------------------------------------------------------------------------------HTML Index */
 .linkAcceso {
   display: flex;
@@ -584,9 +584,10 @@ footer {
   .linkAcceso div {
     object-fit: contain;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
-    width: 30%;
+    width: 100%;
     padding-bottom: 3rem; }
     .linkAcceso div a {
       text-decoration: none;
@@ -612,7 +613,6 @@ footer {
           transform: scale(0.5); }
     .linkAcceso div p {
       height: auto;
-      width: 50%;
       font-weight: bold;
       font-size: 0.9rem; }
     .linkAcceso div h2 {
@@ -654,7 +654,7 @@ footer {
     .seccionQuienesSomos .quienSomos div {
       padding-left: 1rem; }
       .seccionQuienesSomos .quienSomos div h2 {
-        padding-bottom: 20px;
+        margin-bottom: 50px;
         text-align: center; }
       .seccionQuienesSomos .quienSomos div blockquote {
         border-left: 5px solid #c00505;
@@ -740,8 +740,9 @@ footer {
   background-image: linear-gradient(white, #888888);
   padding-top: 10px; }
   .publicidad img {
-    width: auto;
-    height: auto; }
+    width: 40%;
+    height: 100%;
+    padding-bottom: 10px; }
 
 /*---------------------------------------------------------------------------------------------FIN HTML Servicios*/
 /* -----------------------------------------------------------------------------------------HTML Legislacion */
@@ -785,39 +786,25 @@ footer {
 /* -----------------------------------------------------------------------------------------FIN HTML Legislacion */
 /* --------------------------------------------------------------------------------------------------HTML Contacto */
 .infoContact {
-  height: 50%; }
-  .infoContact .EmpresaContacto {
+  background-image: linear-gradient(white, #888888);
+  padding: 0; }
+  .infoContact .EmpresaContacto .infoEmpresa {
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    text-align: center;
-    margin-top: 20px;
-    padding-bottom: 40px;
-    flex-wrap: wrap; }
-    .infoContact .EmpresaContacto div {
-      display: flex;
-      align-content: center;
-      flex-direction: column;
-      flex-wrap: wrap;
-      align-items: flex-start; }
-    .infoContact .EmpresaContacto .infoEmpresa {
-      text-align: left;
-      display: flex;
-      width: 50%;
-      padding-top: 50px;
-      padding-right: 5px; }
-      .infoContact .EmpresaContacto .infoEmpresa h2 {
-        padding-bottom: 15px;
-        font-weight: bold; }
-      .infoContact .EmpresaContacto .infoEmpresa .datosEmpresa {
-        padding-top: 30px; }
-        .infoContact .EmpresaContacto .infoEmpresa .datosEmpresa h3 {
-          font-size: 1.3rem;
-          padding: 5px;
-          font-weight: normal; }
-    .infoContact .EmpresaContacto .mapaGoogle {
-      text-align: center;
-      height: 20rem;
-      width: 100%; }
+    flex-direction: column;
+    align-items: center; }
+    .infoContact .EmpresaContacto .infoEmpresa h2 {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 1.8rem; }
+    .infoContact .EmpresaContacto .infoEmpresa .datosEmpresa {
+      margin-top: 20px;
+      margin-bottom: 30px; }
+      .infoContact .EmpresaContacto .infoEmpresa .datosEmpresa h3 {
+        font-size: 1.4rem; }
+  .infoContact .EmpresaContacto .mapaGoogle {
+    width: 90%;
+    height: 15rem; }
 
 /* --------------------------------------------------------------------------------------------------FIN HTML Contacto */
 /*-----------------------------------------------------------------------------------------------------MEDIA QUERY*/
@@ -834,30 +821,16 @@ footer {
       justify-content: flex-start;
       flex-direction: column;
       padding-bottom: 10px; }
-  .linkAcceso {
-    flex-direction: column;
-    align-items: center; }
-    .linkAcceso div {
-      width: 100%; }
-  .quienSomos div img {
+  header .quienSomos div img {
     margin-left: 0; }
-  .infoContact .EmpresaContacto {
-    justify-content: space-around; }
-  .formularioContacto {
-    width: 25rem; }
-    .formularioContacto form {
-      width: 100%;
-      padding-left: 5px;
-      padding-right: 5px; }
-      .formularioContacto form .buttonContact {
-        width: 100%; }
   .tituloPrincipal .shadown div {
-    align-items: center; } }
-
-@media (max-width: 320px) and (min-height: 240px) {
-  .infoContact .EmpresaContacto {
-    justify-content: space-around; }
-  .formularioContacto {
-    width: 19rem; } }
+    align-items: center; }
+  .clientes .carousel-inner {
+    padding: 30px;
+    width: 85%; }
+  .carousel-control-next-icon {
+    padding: 1rem; }
+  .carousel-control-prev-icon {
+    padding: 1rem; } }
 
 /*-----------------------------------------------------------------------------------------------------FIN MEDIA QUERY*/

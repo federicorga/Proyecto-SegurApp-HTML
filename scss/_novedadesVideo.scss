@@ -6,6 +6,8 @@
 .novedades{
     background: map-get($FondoColorGeneral, FondoB);
 
+    
+
     h2{
         color: $color-titulofondoB;
         line-height: 1.5;
@@ -23,6 +25,8 @@
         iframe{
 
             border-radius: 50px;
+            height: 20rem;
+            width: 80%;
 
         }
 

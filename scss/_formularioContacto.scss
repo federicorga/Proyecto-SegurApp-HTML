@@ -8,71 +8,70 @@
 /*-----------------------------------------------------------------------------------------------------FORMULARIO CONTACTO*/
 
 .formularioContacto{
-    width: 25rem;
-    padding-bottom: 14px;
-    border-radius: 1rem;
-    margin-top: 5px;
+   
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),url(../imagen/contactfond.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
     
-    box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
-    -moz-box-shadow: -2px 2px 13px 4px rgba(0,0,0,0.75);
+    
     
 
     form{
-        padding-top: 1rem;
-        text-align: left;
+
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        border-radius: 10px;
+        border: 2px solid #4f4e4e;
+        border-radius: 20px;
+        background: #0a0a0a66;
+        padding: 4px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        ::placeholder{
+            color: rgb(173, 173, 173);
+        }
         
         h2{
+
+        color: white;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
             
-            border-bottom: 3px solid #36bcdd;
-        
-            padding-bottom: 1rem;
-            text-align: center;
-            margin-left: 50px;
-            margin-right: 50px;
-            text-transform: uppercase;
-            font-weight: bold;
-            margin-bottom: 20px;
+           
     
         }
 
     }
 
     label{
-        display: flex;
-        margin-bottom: 5px;
-        font-weight: 700;
-        text-align: left;
-        flex-direction: column;
-        flex-wrap: wrap;
+        color: white;
+        margin-bottom: 4px;
+        margin-top: 4px;
+      
     }
 
     input{
-        display: flex;
-        border: none;
-        background: none;
-        border-bottom: 2px solid #36bcdd;
-        text-align: left;
-        height: 50px;
-        width: 100%;
-        margin-bottom: 16px;
-        outline: none;
+        color: wheat;
+    background-color: #3a3a3a;
+    border: 0;
+        
     }
 
     textarea{
     
-        border: 1px solid #36bcdd;
-        border-radius: 0.6rem;
-        outline: none;
-        width: 100%;
-        color: #000000;
-        font-family: $fuente-estiloA;
-
+        color: wheat;
+        background-color: #3a3a3a;
+        border: 0;
     }
+
 }
 
 
@@ -87,15 +86,13 @@
         display: flex;
         font-family: $fuente-estiloA;
         width: 160px;
-        color: white;
+        color: black;
         text-align: center;
         font-weight: bold;
         cursor: pointer;
         text-transform: uppercase;
-        /* background: #032cb3; */
-        /* background: radial-gradient(ellipse farthest-corner at center center, #003372 0%, rgba(25, 110, 163, 0.73) 80%); */
-        background: -webkit-radial-gradient(ellipse farthest-corner at center center, #002e72 0%, rgba(25, 64, 163, 0.73) 80%);
-        background: -moz-radial-gradient(ellipse farthest-corner at center center, #003172 0%, rgba(25, 94, 163, 0.73) 80%);
+        background-color: white;
+
         border-radius: 88px 88px 88px 88px;
         -webkit-border-radius: 88px 88px 88px 88px;
         -moz-border-radius: 88px 88px 88px 88px;
