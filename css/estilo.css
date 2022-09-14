@@ -823,11 +823,10 @@ footer {
       header .myNav .myContenedorNav1 div .botonHamburg {
         margin-bottom: 10px; }
     header .myNav .myContenedorNav1 .myContenedorNav {
+      align-items: center;
+      padding-bottom: 10px;
       flex-wrap: wrap;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: column;
-      padding-bottom: 10px; }
+      justify-content: flex-start; }
   header .quienSomos div img {
     margin-left: 0; }
   .tituloPrincipal .shadown div {
