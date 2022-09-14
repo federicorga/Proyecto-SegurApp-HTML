@@ -808,13 +808,20 @@ footer {
 
 /* --------------------------------------------------------------------------------------------------FIN HTML Contacto */
 /*-----------------------------------------------------------------------------------------------------MEDIA QUERY*/
-@media (min-width: 320px) and (max-width: 1080px) and (min-height: 240px) {
+@media (min-width: 200px) and (max-width: 991px) and (min-height: 240px) {
   header .myNav .myContenedorNav1 {
     display: flex;
     flex-direction: column;
     align-items: flex-start; }
-    header .myNav .myContenedorNav1 .botonHamburg {
-      margin-bottom: 10px; }
+    header .myNav .myContenedorNav1 .imgD {
+      width: 100%;
+      text-align: center; }
+    header .myNav .myContenedorNav1 div {
+      width: 100%;
+      text-align: left;
+      margin-top: 5px; }
+      header .myNav .myContenedorNav1 div .botonHamburg {
+        margin-bottom: 10px; }
     header .myNav .myContenedorNav1 .myContenedorNav {
       flex-wrap: wrap;
       align-items: flex-start;
@@ -826,8 +833,8 @@ footer {
   .tituloPrincipal .shadown div {
     align-items: center; }
   .clientes .carousel-inner {
-    padding: 30px;
-    width: 85%; }
+    margin-top: 30px;
+    width: 86%; }
   .carousel-control-next-icon {
     padding: 1rem; }
   .carousel-control-prev-icon {

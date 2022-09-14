@@ -6,7 +6,7 @@
 /*-----------------------------------------------------------------------------------------------------MEDIA QUERY*/
 
 
-@media (min-width:320px) and (max-width:1080px) and (min-height: 240px) {
+@media (min-width:200px) and (max-width: 991px) and (min-height: 240px) {
 
  header{
    .myNav{
@@ -15,10 +15,23 @@
             flex-direction: column;
             align-items: flex-start;
 
-            .botonHamburg{
-                margin-bottom: 10px;
+            .imgD{
+                
+                width: 100%;
+                text-align: center;
             }
+            div{
+                width: 100%;
+                text-align: left;
+                margin-top: 5px;
 
+                .botonHamburg{
+                    margin-bottom: 10px;
+
+                }
+
+            }
+          
             .myContenedorNav{
                 flex-wrap: wrap;
                 align-items: flex-start;
@@ -68,8 +81,9 @@
 
 
     .clientes .carousel-inner {
-        padding: 30px;
-        width: 85%;
+        margin-top: 30px;
+    
+        width: 86%;
         
     }
 
