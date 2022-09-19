@@ -12,16 +12,17 @@
    .myNav{
         .myContenedorNav1{
             display: flex;
-            flex-direction: column;
-            align-items: flex-start;
+            flex-direction: row;
+            flex-wrap: wrap;
+        
 
             .imgD{
                 
-                width: 100%;
+                
                 text-align: center;
             }
             div{
-                width: 100%;
+                
                 text-align: center;
                 margin-top: 5px;
 
