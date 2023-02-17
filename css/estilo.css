@@ -811,14 +811,12 @@ footer {
 @media (min-width: 200px) and (max-width: 991px) and (min-height: 240px) {
   header .myNav .myContenedorNav1 {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start; }
+    flex-direction: row;
+    flex-wrap: wrap; }
     header .myNav .myContenedorNav1 .imgD {
-      width: 100%;
       text-align: center; }
     header .myNav .myContenedorNav1 div {
-      width: 100%;
-      text-align: left;
+      text-align: center;
       margin-top: 5px; }
       header .myNav .myContenedorNav1 div .botonHamburg {
         margin-bottom: 10px; }
