@@ -1,5 +1,5 @@
 # Proyecto HTML 
-## pagina simuladora de Servicio de Seguridad e Higiene
+## Pagina simuladora de Servicio de Seguridad e Higiene
 
 _SegurAPP_
 
