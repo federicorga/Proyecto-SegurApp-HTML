@@ -3,7 +3,7 @@
 
 _SegurAPP_
 
-Link de la web [Zona-Gamer](https://federicorga.github.io/JS-ProyectoPaginaJuegos/)
+Link de la web [SegurAPP](https://federicorga.github.io/Proyecto-SegurApp-HTML/)
 
 
 
